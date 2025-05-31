@@ -78,7 +78,7 @@ const Hero2 = (props) => {
         <SwiperSlide>
           <div
             className="slide-inner slide-bg-image"
-            style={{ backgroundImage: `url(${"/images/slider/slide-2.jpg"})` }}
+            style={{ backgroundImage: `url(${slider01.src})` }}
           >
             <div className="container-fluid">
               <div className="slide-content">
@@ -90,8 +90,9 @@ const Hero2 = (props) => {
                 </div>
                 <div className="slide-sub-title">
                   <h2>
-                    Charities focused
-                    <span> education </span> <span className="text">help</span>
+                    Charity focused
+                    <span> educational </span>{" "}
+                    <span className="text">help</span>
                   </h2>
                 </div>
                 <div className="slide-btns">
