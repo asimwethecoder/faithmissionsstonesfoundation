@@ -7,7 +7,7 @@ import Link from "next/link";
 import shape1 from "/public/images/healthcare.svg";
 import shape2 from "/public/images/slider/shape-9.svg";
 import shape3 from "/public/images/slider/shape-10.svg";
-import slider01 from "/public/images/slider/slider01.jpg";
+import slider01 from "/public/images/slider/slider01.JPG";
 import slide00 from "/public/images/slider/slide00.jpg";
 
 import Image from "next/image";
