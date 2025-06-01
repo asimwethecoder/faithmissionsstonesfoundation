@@ -1,7 +1,5 @@
 import { createStore, compose, applyMiddleware } from "redux";
-
 import { persistStore, persistReducer } from 'redux-persist';
-
 import storage from "redux-persist/lib/storage"; // defaults to localStorage for web
 
 // middlewares
@@ -17,18 +15,18 @@ const persistConfig = {
   storage,
 };
 
+// Create persisted reducer
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
+// Fix for Redux DevTools
+const composeEnhancers = typeof window !== "undefined" && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ 
+  ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({}) 
+  : compose;
+
+// Create store with middleware
 let store = createStore(
   persistedReducer,
-  compose(
-    applyMiddleware(...middleware),
-    //For working redux dev tools in chrome (https://github.com/zalmoxisus/redux-devtools-extension)
-    typeof window !== "undefined" && window.__REDUX_DEVTOOLS_EXTENSION__
-      ? window.__REDUX_DEVTOOLS_EXTENSION__ &&
-          window.__REDUX_DEVTOOLS_EXTENSION__()
-      : (f) => f
-  )
+  composeEnhancers(applyMiddleware(...middleware))
 );
 
 let persistor = persistStore(store);

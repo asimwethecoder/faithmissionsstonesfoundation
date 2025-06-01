@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-import slider1 from "/public/images/slider/slider1.JPG";
+import slider1 from "/public/images/slider/slider1.jpg";
 import Shape from "/public/images/register-shape.svg";
 import Shape1 from "/public/images/healthcare.svg";
 import Image from "next/image";
