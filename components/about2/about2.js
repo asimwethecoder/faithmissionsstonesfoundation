@@ -17,9 +17,8 @@ import Shape8 from "/public/images/about/shape8.svg";
 import Image from "next/image";
 import slide00 from "/public/images/slider/slide00.jpg";
 import slide012 from "/public/images/slider/slide012.jpg";
-import slider1 from "/public/images/slider/slider1.JPG";
-import slider01 from "/public/images/slider/slider01.JPG";
-import slider013 from "/public/images/slider/slider013.JPG";
+import slider1 from "/public/images/slider/slider1.jpg";
+import slider013 from "/public/images/slider/slider013.jpg";
 
 const AboutS2 = (props) => {
   const [activeTab, setActiveTab] = useState(0);
