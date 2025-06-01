@@ -4,7 +4,7 @@ import Services from '../../pages/api/Services';
 import Shape from '/public/images/healthcare.svg';
 import Shape2 from '/public/images/service/shape-3.svg';
 import Image from 'next/image';
-import mine from '/public/images/slider/mine.jpg';
+import mine from '../../public/images/slider/mine.jpg'; // Adjust the path as necessary
 
 const ClickHandler = () => {
   window.scrollTo(10, 0);

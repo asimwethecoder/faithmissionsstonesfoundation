@@ -2,7 +2,7 @@ import React from 'react';
 import Shape from '/public/images/slider/shape-3.svg';
 import Shape2 from '/public/images/donate-2.svg';
 import Image from 'next/image';
-import mine from '/public/images/slider/mine.jpg';
+import mine from '../../public/images/slider/mine.jpg';
 
 const PageTitle = props => {
   return (
