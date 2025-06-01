@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import Navbar from '../../components/Navbar/Navbar';
 import PageTitle from '../../components/pagetitle/PageTitle';
 import Scrollbar from '../../components/scrollbar/scrollbar';
-import Projects from '../../api/projects';
+import Projects from '../../pages/api/projects';
 import Footer from '../../components/footer/Footer';
 import logo from '/public/images/logo-2.svg';
 import psingle1 from '/public/images/project-details/sing1.jpg';

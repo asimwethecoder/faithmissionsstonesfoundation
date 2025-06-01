@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Teams from "../../api/team";
+import Teams from "../../pages/api/team";
 import Image from "next/image";
 
 

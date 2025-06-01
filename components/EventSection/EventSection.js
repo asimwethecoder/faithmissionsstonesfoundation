@@ -1,5 +1,5 @@
 import React from 'react';
-import event from '../../api/event';
+import event from '../../pages/api/event';
 import Link from 'next/link';
 import Image from 'next/image';
 

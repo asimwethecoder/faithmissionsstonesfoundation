@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import blogs from '../../api/blogs'
+import blogs from '../../pages/api/blogs'
 import Shape from '/public/images/blog/bg-shape.png'
 import Shape1 from '/public/images/blog/business.svg'
 import Image from "next/image";

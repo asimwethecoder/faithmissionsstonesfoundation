@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Logo from '/public/images/logo-2.svg';
-import Services from '../../api/Services';
+import Services from '../../pages/api/Services';
 
 import shape1 from '/public/images/f-shape5.svg';
 import shape2 from '/public/images/f-shape6.svg';

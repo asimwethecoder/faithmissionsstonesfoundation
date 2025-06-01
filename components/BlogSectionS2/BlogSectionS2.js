@@ -3,7 +3,7 @@ import Link from "next/link";
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import blogs from '../../api/blogs'
+import blogs from '../../pages/api/blogs'
 import Image from "next/image";
 
 const ClickHandler = () => {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Instagram from "../../api/Instagram";
+import Instagram from "../../pages/api/Instagram";
 
 import BgImg from '/public/images/instagam/shape.png'
 import BgImg2 from '/public/images/instagam/shape-2.svg'

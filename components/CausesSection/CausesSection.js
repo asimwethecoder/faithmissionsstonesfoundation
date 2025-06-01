@@ -1,5 +1,5 @@
 import React from 'react';
-import causes from '../../api/causes';
+import causes from '../../pages/api/causes';
 import Link from 'next/link';
 import Slider from "react-slick";
 

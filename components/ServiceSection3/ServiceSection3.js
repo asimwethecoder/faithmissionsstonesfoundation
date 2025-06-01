@@ -1,5 +1,5 @@
 import React from 'react';
-import Services from "../../api/Services";
+import Services from "../../pages/api/Services";
 import Link from 'next/link';
 
 const ServiceSection3 = (props) => {

@@ -5,7 +5,7 @@ import Scrollbar from "../../components/scrollbar/scrollbar";
 import Accordion from "../../components/Accordion/Accordion";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import Services from "../../api/Services";
+import Services from "../../pages/api/Services";
 import ServiceSidebar from "./sidebar";
 import video from "/public/images/service-single/video.jpg";
 import simg1 from "/public/images/image-gallery/1.jpg";

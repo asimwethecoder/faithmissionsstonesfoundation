@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import testimonials from '../../api/testimonialData';
+import testimonials from '../../pages/api/testimonialData';
 
 import Shape from '/public/images/testimonial/shape.svg'
 import Shape2 from '/public/images/testimonial/shape-2.svg'

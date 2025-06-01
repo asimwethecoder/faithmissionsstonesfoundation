@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import Link from "next/link";
-import Projects from "../../api/projects";
+import Projects from "../../pages/api/projects";
 import Navbar from '../../components/Navbar/Navbar';
 import PageTitle from '../../components/pagetitle/PageTitle'
 import Footer from '../../components/footer/Footer';

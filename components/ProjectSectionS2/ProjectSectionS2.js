@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from "next/link";
 import Slider from "react-slick";
-import Projects from "../../api/projects";
+import Projects from "../../pages/api/projects";
 
 import shape from '/public/images/project/shapebg-3.svg'
 import Image from 'next/image';

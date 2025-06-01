@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link'
-import Services from "../../api/Services";
+import Services from "../../pages/api/Services";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Services from '../../api/Services';
+import Services from '../../pages/api/Services';
 import Shape from '/public/images/healthcare.svg';
 import Shape2 from '/public/images/service/shape-3.svg';
 import Image from 'next/image';

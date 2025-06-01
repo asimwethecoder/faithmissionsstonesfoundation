@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
-import Projects from "../../api/projects";
+import Projects from "../../pages/api/projects";
 import Image from "next/image";
 
 

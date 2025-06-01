@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link'
 import BlogSidebar from '../BlogSidebar/BlogSidebar'
 
-import blogs from '../../api/blogs'
+import blogs from '../../pages/api/blogs'
 import Image from 'next/image';
 
 

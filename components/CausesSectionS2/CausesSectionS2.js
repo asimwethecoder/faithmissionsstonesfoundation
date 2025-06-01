@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import causes from '../../api/causes';
+import causes from '../../pages/api/causes';
 import Shape from '/public/images/causes/shape2.svg';
 import Slider from 'react-slick';
 import Image from 'next/image';

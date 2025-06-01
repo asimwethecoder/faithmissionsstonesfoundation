@@ -6,7 +6,7 @@ import blog4 from '/public/images/blog-details/comments-author/img-2.jpg'
 import gl0 from '/public/images/blog-details/img-2.jpg'
 import gl1 from '/public/images/blog-details/img-3.jpg'
 import gl2 from '/public/images/blog-details/img-4.jpg'
-import blogs from '../../api/blogs';
+import blogs from '../../pages/api/blogs';
 import { useRouter } from 'next/router'
 import BlogSidebar from '../BlogSidebar/BlogSidebar'
 import Image from 'next/image';
