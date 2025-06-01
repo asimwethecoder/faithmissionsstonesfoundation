@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 
-import Arrow from '/public/images/up-arrow1.svg';
-import Icon1 from '/public/images/healthcare-icon1.svg';
-import Icon2 from '/public/images/healthcare-icon2.svg';
-import Shape from '/public/images/curved_shape2.svg';
+import Arrow from '../../public/images/up-arrow1.svg';
+import Icon1 from '../../public/images/healthcare-icon1.svg';
+import Icon2 from '../../public/images/healthcare-icon2.svg';
+import Shape from '../../public/images/curved_shape2.svg';
 import Image from 'next/image';
 import mine from '../../public/images/slider/mine.jpg'; // Adjust the path as necessary
 import slider1 from '../../public/images/slider/slider1.jpg';

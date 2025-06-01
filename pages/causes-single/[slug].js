@@ -6,15 +6,15 @@ import Navbar from '../../components/Navbar/Navbar';
 import PageTitle from '../../components/pagetitle/PageTitle';
 import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar';
-import Logo from '/public/images/logo-2.svg';
-import shape from '/public/images/cause-single/shape.svg';
-import Icon from '/public/images/cause-single/icon.svg';
+import Logo from '../../public/images/logo-2.svg';
+import shape from '../../public/images/cause-single/shape.svg';
+import Icon from '../../public/images/cause-single/icon.svg';
 import DonationForm from './DonationForm';
 import SidebarSection from './SidebarSection';
-import simg1 from '/public/images/image-gallery/1.jpg';
-import simg2 from '/public/images/image-gallery/2.jpg';
-import simg3 from '/public/images/image-gallery/3.jpg';
-import simg4 from '/public/images/image-gallery/4.jpg';
+import simg1 from '../../public/images/image-gallery/1.jpg';
+import simg2 from '../../public/images/image-gallery/2.jpg';
+import simg3 from '../../public/images/image-gallery/3.jpg';
+import simg4 from '../../public/images/image-gallery/4.jpg';
 import Accordion from '../../components/Accordion/Accordion';
 
 const CausesSinglePage = () => {

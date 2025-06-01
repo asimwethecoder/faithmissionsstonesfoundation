@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Services from '../../pages/api/Services';
 
-import shape1 from '/public/images/f-shape1.svg';
-import shape2 from '/public/images/f-shape-2.svg';
-import shape3 from '/public/images/f-shape3.svg';
-import shape4 from '/public/images/f-shape4.svg';
+import shape1 from '../../public/images/f-shape1.svg';
+import shape2 from '../../public/images/f-shape-2.svg';
+import shape3 from '../../public/images/f-shape3.svg';
+import shape4 from '../../public/images/f-shape4.svg';
 import Image from 'next/image';
 
 const ClickHandler = () => {

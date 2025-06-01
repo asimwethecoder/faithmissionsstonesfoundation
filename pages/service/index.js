@@ -12,7 +12,7 @@ import BlogSectionS2 from '../../components/BlogSectionS2/BlogSectionS2';
 import CtaSectionS3 from '../../components/CtaSectionS3/CtaSectionS3';
 import FooterS2 from '../../components/footerS2/FooterS2';
 import Scrollbar from '../../components/scrollbar/scrollbar';
-import Logo from '/public/images/logo-2.svg';
+import Logo from '../../public/images/logo-2.svg';
 
 const ServicePage = () => {
   return (

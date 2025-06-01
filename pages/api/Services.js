@@ -1,30 +1,30 @@
 // images
-import img1 from '/public/images/service/1.jpg';
-import img2 from '/public/images/service/2.jpg';
-import img3 from '/public/images/service/3.jpg';
-import img4 from '/public/images/service/2.jpg';
+import img1 from '../../public/images/service/1.jpg';
+import img2 from '../../public/images/service/2.jpg';
+import img3 from '../../public/images/service/3.jpg';
+import img4 from '../../public/images/service/2.jpg';
 
-import icon1 from '/public/images/service/icon-1.svg';
-import icon2 from '/public/images/service/icon-2.svg';
-import icon3 from '/public/images/service/icon-3.svg';
-import icon4 from '/public/images/service/icon-4.svg';
-import icon5 from '/public/images/service/icon-3.svg';
+import icon1 from '../../public/images/service/icon-1.svg';
+import icon2 from '../../public/images/service/icon-2.svg';
+import icon3 from '../../public/images/service/icon-3.svg';
+import icon4 from '../../public/images/service/icon-4.svg';
+import icon5 from '../../public/images/service/icon-3.svg';
 
 /* Single image */
-import simg1 from '/public/images/service-single/img-1.jpg';
-import simg2 from '/public/images/service-single/img-2.jpg';
-import simg3 from '/public/images/service-single/img-3.jpg';
-import simg4 from '/public/images/service-single/img-4.jpg';
-import simg5 from '/public/images/service-single/img-5.jpg';
-import simg6 from '/public/images/service-single/img-6.jpg';
-import simg7 from '/public/images/service-single/img-7.jpg';
-import simg8 from '/public/images/service-single/img-8.jpg';
-import simg9 from '/public/images/service-single/img-9.jpg';
-import simg10 from '/public/images/service-single/img-5.jpg';
-import simg11 from '/public/images/service-single/img-6.jpg';
-import simg12 from '/public/images/service-single/img-7.jpg';
-import simg13 from '/public/images/service-single/img-8.jpg';
-import simg14 from '/public/images/service-single/img-9.jpg';
+import simg1 from '../../public/images/service-single/img-1.jpg';
+import simg2 from '../../public/images/service-single/img-2.jpg';
+import simg3 from '../../public/images/service-single/img-3.jpg';
+import simg4 from '../../public/images/service-single/img-4.jpg';
+import simg5 from '../../public/images/service-single/img-5.jpg';
+import simg6 from '../../public/images/service-single/img-6.jpg';
+import simg7 from '../../public/images/service-single/img-7.jpg';
+import simg8 from '../../public/images/service-single/img-8.jpg';
+import simg9 from '../../public/images/service-single/img-9.jpg';
+import simg10 from '../../public/images/service-single/img-5.jpg';
+import simg11 from '../../public/images/service-single/img-6.jpg';
+import simg12 from '../../public/images/service-single/img-7.jpg';
+import simg13 from '../../public/images/service-single/img-8.jpg';
+import simg14 from '../../public/images/service-single/img-9.jpg';
 
 const Services = [
   {

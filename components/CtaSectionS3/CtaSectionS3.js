@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 
-import Shape from '/public/images/healthcare.svg';
-import Shape2 from '/public/images/cta-shap-2.svg';
-import Shape3 from '/public/images/cta-shap-3.svg';
+import Shape from '../../public/images/healthcare.svg';
+import Shape2 from '../../public/images/cta-shap-2.svg';
+import Shape3 from '../../public/images/cta-shap-3.svg';
 import Image from 'next/image';
 
 const ClickHandler = () => {

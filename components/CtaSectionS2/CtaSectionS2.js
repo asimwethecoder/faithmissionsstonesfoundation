@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-import shape from '/public/images/healthcare-with.svg';
+import shape from '../../public/images/healthcare-with.svg';
 import Image from 'next/image';
 
 const CtaSectionS2 = () => {

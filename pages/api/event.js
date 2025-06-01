@@ -1,16 +1,16 @@
-import eimg1 from '/public/images/mission-vission/1.jpg';
-import eimg2 from '/public/images/mission-vission/2.jpg';
-import eimg3 from '/public/images/mission-vission/3.jpg';
-import eimg4 from '/public/images/mission-vission/4.jpg';
-import eimg5 from '/public/images/mission-vission/5.jpg';
-import eimg6 from '/public/images/mission-vission/6.jpg';
+import eimg1 from '../../public/images/mission-vission/1.jpg';
+import eimg2 from '../../public/images/mission-vission/2.jpg';
+import eimg3 from '../../public/images/mission-vission/3.jpg';
+import eimg4 from '../../public/images/mission-vission/4.jpg';
+import eimg5 from '../../public/images/mission-vission/5.jpg';
+import eimg6 from '../../public/images/mission-vission/6.jpg';
 
-import esing1 from '/public/images/events-single/1.jpg';
-import esing2 from '/public/images/events-single/2.jpg';
-import esing3 from '/public/images/events-single/3.jpg';
-import esing4 from '/public/images/events-single/4.jpg';
-import esing5 from '/public/images/events-single/5.jpg';
-import esing6 from '/public/images/events-single/6.jpg';
+import esing1 from '../../public/images/events-single/1.jpg';
+import esing2 from '../../public/images/events-single/2.jpg';
+import esing3 from '../../public/images/events-single/3.jpg';
+import esing4 from '../../public/images/events-single/4.jpg';
+import esing5 from '../../public/images/events-single/5.jpg';
+import esing6 from '../../public/images/events-single/6.jpg';
 
 const event = [
   {

@@ -3,16 +3,16 @@ import Link from 'next/link';
 import Logo from '/public/images/logo-2.svg';
 import Services from '../../pages/api/Services';
 
-import shape1 from '/public/images/f-shape5.svg';
-import shape2 from '/public/images/f-shape6.svg';
-import shape3 from '/public/images/f-shape4.svg';
+import shape1 from '../../public/images/f-shape5.svg';
+import shape2 from '../../public/images/f-shape6.svg';
+import shape3 from '../../public/images/f-shape4.svg';
 
-import Icon1 from '/public/images/banck/1.png';
-import Icon2 from '/public/images/banck/2.png';
-import Icon3 from '/public/images/banck/3.png';
-import Icon4 from '/public/images/banck/4.png';
-import Icon5 from '/public/images/banck/5.png';
-import Icon6 from '/public/images/banck/6.png';
+import Icon1 from '../../public/images/banck/1.png';
+import Icon2 from '../../public/images/banck/2.png';
+import Icon3 from '../../public/images/banck/3.png';
+import Icon4 from '../../public/images/banck/4.png';
+import Icon5 from '../../public/images/banck/5.png';
+import Icon6 from '../../public/images/banck/6.png';
 import Image from 'next/image';
 
 const ClickHandler = () => {

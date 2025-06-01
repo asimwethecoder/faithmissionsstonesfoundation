@@ -13,7 +13,7 @@ import PartnerSectionS2 from '../../components/PartnerSectionS2/PartnerSectionS2
 import CtaSectionS3 from '../../components/CtaSectionS3/CtaSectionS3';
 import FooterS2 from '../../components/footerS2/FooterS2';
 import Scrollbar from '../../components/scrollbar/scrollbar';
-import Logo from '/public/images/logo.svg';
+import Logo from '../../public/images/logo.svg';
 
 const HomePage2 = () => {
   return (

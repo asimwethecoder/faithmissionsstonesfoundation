@@ -1,11 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
 
-import Shape from '/public/images/cta-shap.svg';
-import Shape2 from '/public/images/curved_shape.svg';
-import Shape3 from '/public/images/arrow1.svg';
+import Shape from '../../public/images/cta-shap.svg';
+import Shape2 from '../../public/images/curved_shape.svg';
+import Shape3 from '../../public/images/arrow1.svg';
 import Image from 'next/image';
-import volunteer from '/public/images/slider/volunteer.jpg';
+import volunteer from '../../public/images/slider/volunteer.jpg';
 
 const ClickHandler = () => {
   window.scrollTo(10, 0);

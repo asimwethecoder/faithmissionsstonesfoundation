@@ -1,5 +1,5 @@
-import sImg1 from '/public/images/testimonial/3.jpg';
-import sImg2 from '/public/images/testimonial/2.jpg';
+import sImg1 from '../../public/images/testimonial/3.jpg';
+import sImg2 from '../../public/images/testimonial/2.jpg';
 
 const testimonials = [
   {

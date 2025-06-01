@@ -1,8 +1,8 @@
-import director1 from '/public/images/volunteer/director1.jpg';
-import director2 from '/public/images/volunteer/director2.jpg';
+import director1 from '../../public/images/volunteer/director1.jpg';
+import director2 from '../../public/images/volunteer/director2.jpg';
 
-import Stime1 from '/public/images/volunteer-single/1.jpg';
-import Stime2 from '/public/images/volunteer-single/2.jpg';
+import Stime1 from '../../public/images/volunteer-single/1.jpg';
+import Stime2 from '../../public/images/volunteer-single/2.jpg';
 
 const Teams = [
   {
