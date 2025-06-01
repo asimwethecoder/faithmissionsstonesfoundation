@@ -102,18 +102,6 @@ const HeaderS2 = props => {
                               </Link>
                             </li>
                             <li>
-                              <Link onClick={ClickHandler} href='/volunteer-2'>
-                                volunteer S2
-                              </Link>
-                            </li>
-                            <li>
-                              <Link
-                                onClick={ClickHandler}
-                                href='/volunteer-single/Henry-Bannet'>
-                                volunteer single
-                              </Link>
-                            </li>
-                            <li>
                               <Link
                                 onClick={ClickHandler}
                                 href='/become-volunteer'>
@@ -167,58 +155,6 @@ const HeaderS2 = props => {
                         </li>
                       </ul>
                     </li>
-                    <li className='menu-item-has-children'>
-                      <Link onClick={ClickHandler} href='#'>
-                        Blog
-                      </Link>
-                      <ul className='sub-menu'>
-                        <li>
-                          <Link onClick={ClickHandler} href='/blog'>
-                            Blog right sidebar
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            onClick={ClickHandler}
-                            href='/blog-left-sidebar'>
-                            Blog left sidebar
-                          </Link>
-                        </li>
-                        <li>
-                          <Link onClick={ClickHandler} href='/blog-fullwidth'>
-                            Blog fullwidth
-                          </Link>
-                        </li>
-                        <li className='menu-item-has-children'>
-                          <Link onClick={ClickHandler} href='#'>
-                            Blog details
-                          </Link>
-                          <ul className='sub-menu'>
-                            <li>
-                              <Link
-                                onClick={ClickHandler}
-                                href='/blog-single/Why-Industry-Are-A-Juicy-Target-For-Cyberattack'>
-                                Blog details right sidebar
-                              </Link>
-                            </li>
-                            <li>
-                              <Link
-                                onClick={ClickHandler}
-                                href='/blog-single-left-sidebar/Why-Industry-Are-A-Juicy-Target-For-Cyberattack'>
-                                Blog details left sidebar
-                              </Link>
-                            </li>
-                            <li>
-                              <Link
-                                onClick={ClickHandler}
-                                href='/blog-single-fullwidth/Why-Industry-Are-A-Juicy-Target-For-Cyberattack'>
-                                Blog details fullwidth
-                              </Link>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
                     <li>
                       <Link onClick={ClickHandler} href='/contact'>
                         contact
@@ -235,12 +171,12 @@ const HeaderS2 = props => {
                         onClick={() => setMenuState(!menuActive)}
                         className='search-toggle-btn'>
                         <i
-                          className={`fi ti-search ${
+                          className={`fi ti-search \${
                             menuActive ? 'ti-close' : 'fi '
                           }`}></i>
                       </button>
                       <div
-                        className={`header-search-form ${
+                        className={`header-search-form \${
                           menuActive ? 'header-search-content-toggle' : ''
                         }`}>
                         <form onSubmit={SubmitHandler}>
@@ -276,6 +212,7 @@ const HeaderS2 = props => {
     </header>
   );
 };
+
 const mapStateToProps = state => {
   return {
     carts: state.cartList.cart,

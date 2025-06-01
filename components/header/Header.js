@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import MobileMenu from '../MobileMenu/MobileMenu';
-import { totalPrice } from '../../utils';
 import { connect } from 'react-redux';
 import { removeFromCart } from '../../store/actions/action';
 import HeaderTopbar from '../HeaderTopbar/HeaderTopbar';
@@ -10,7 +9,6 @@ import Image from 'next/image';
 
 const Header = props => {
   const [menuActive, setMenuState] = useState(false);
-  const [cartActive, setcartState] = useState(false);
 
   const SubmitHandler = e => {
     e.preventDefault();
@@ -123,18 +121,6 @@ const Header = props => {
                               </Link>
                             </li>
                             <li>
-                              <Link onClick={ClickHandler} href='/volunteer-2'>
-                                volunteer S2
-                              </Link>
-                            </li>
-                            <li>
-                              <Link
-                                onClick={ClickHandler}
-                                href='/volunteer-single/Henry-Bannet'>
-                                volunteer single
-                              </Link>
-                            </li>
-                            <li>
                               <Link
                                 onClick={ClickHandler}
                                 href='/become-volunteer'>
@@ -142,11 +128,6 @@ const Header = props => {
                               </Link>
                             </li>
                           </ul>
-                        </li>
-                        <li>
-                          <Link onClick={ClickHandler} href='/404'>
-                            404 Error
-                          </Link>
                         </li>
                       </ul>
                     </li>
@@ -185,87 +166,6 @@ const Header = props => {
                             href='/project-single/Custom-Fabrication'>
                             Portfolio Single
                           </Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className='menu-item-has-children'>
-                      <Link onClick={ClickHandler} href='#'>
-                        Shop
-                      </Link>
-                      <ul className='sub-menu'>
-                        <li>
-                          <Link onClick={ClickHandler} href='/shop'>
-                            Shop
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            onClick={ClickHandler}
-                            href='/shop-single/prayer-mat'>
-                            Shop Single
-                          </Link>
-                        </li>
-                        <li>
-                          <Link onClick={ClickHandler} href='/cart'>
-                            Cart
-                          </Link>
-                        </li>
-                        <li>
-                          <Link onClick={ClickHandler} href='/checkout'>
-                            Checkout
-                          </Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className='menu-item-has-children'>
-                      <Link onClick={ClickHandler} href='#'>
-                        Blog
-                      </Link>
-                      <ul className='sub-menu'>
-                        <li>
-                          <Link onClick={ClickHandler} href='/blog'>
-                            Blog right sidebar
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            onClick={ClickHandler}
-                            href='/blog-left-sidebar'>
-                            Blog left sidebar
-                          </Link>
-                        </li>
-                        <li>
-                          <Link onClick={ClickHandler} href='/blog-fullwidth'>
-                            Blog fullwidth
-                          </Link>
-                        </li>
-                        <li className='menu-item-has-children'>
-                          <Link onClick={ClickHandler} href='#'>
-                            Blog details
-                          </Link>
-                          <ul className='sub-menu'>
-                            <li>
-                              <Link
-                                onClick={ClickHandler}
-                                href='/blog-single/Why-Industry-Are-A-Juicy-Target-For-Cyberattack'>
-                                Blog details right sidebar
-                              </Link>
-                            </li>
-                            <li>
-                              <Link
-                                onClick={ClickHandler}
-                                href='/blog-single-left-sidebar/Why-Industry-Are-A-Juicy-Target-For-Cyberattack'>
-                                Blog details left sidebar
-                              </Link>
-                            </li>
-                            <li>
-                              <Link
-                                onClick={ClickHandler}
-                                href='/blog-single-fullwidth/Why-Industry-Are-A-Juicy-Target-For-Cyberattack'>
-                                Blog details fullwidth
-                              </Link>
-                            </li>
-                          </ul>
                         </li>
                       </ul>
                     </li>
