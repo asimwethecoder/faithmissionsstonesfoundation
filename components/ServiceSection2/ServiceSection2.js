@@ -1,24 +1,24 @@
-import React from 'react';
-import Link from 'next/link';
-import Services from '../../pages/api/Services';
-import Shape from '../../public/images/healthcare.svg';
-import Shape2 from '../../public/images/service/shape-3.svg';
-import Image from 'next/image';
-import mine from '../../public/images/slider/mine.jpg'; // Adjust the path as necessary
+import React from "react";
+import Link from "next/link";
+import Services from "../../pages/api/Services";
+import Shape from "../../public/images/healthcare.svg";
+import Shape2 from "../../public/images/service/shape-3.svg";
+import Image from "next/image";
+import mine from "../../public/images/slider/mine.jpg";
 
 const ClickHandler = () => {
   window.scrollTo(10, 0);
 };
 
-const ServiceSection2 = props => {
+const ServiceSection2 = (props) => {
   return (
-    <section className={'' + props.hclass}>
-      <div className='container'>
-        <div className='row align-items-center'>
-          <div className='col-lg-8 col-12'>
-            <div className='section-title'>
+    <section className={"" + props.hclass}>
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-lg-8 col-12">
+            <div className="section-title">
               <span>
-                <Image src={Shape} alt='' />
+                <Image src={Shape} alt="" />
                 Together, We Can Change Lives Forever.
               </span>
               <h2>
@@ -26,59 +26,63 @@ const ServiceSection2 = props => {
               </h2>
             </div>
           </div>
-          <div className='col-lg-4 col-12'>
-            <div className='all-Service-btn'>
+          <div className="col-lg-4 col-12">
+            <div className="all-Service-btn">
               <Link
                 onClick={ClickHandler}
-                href='/service'
-                className='theme-btn'>
+                href="/service"
+                className="theme-btn"
+              >
                 All Services
               </Link>
             </div>
           </div>
         </div>
-        <div className='bg-image'>
-          <Image src={mine} alt='' />
-          <div className='shape'>
-            <Image src={Shape2} alt='' />
+        <div className="bg-image">
+          <Image src={mine} alt="" />
+          <div className="shape">
+            <Image src={Shape2} alt="" />
           </div>
         </div>
       </div>
-      <div className='container'>
-        <div className='service-wrap'>
+      <div className="container">
+        <div className="service-wrap">
           {Services.slice(2, 9).map((service, index) => (
-            <div className='item' key={index}>
-              <div className='visible-content'>
-                <div className='icon'>
+            <div className="item" key={index}>
+              <div className="visible-content">
+                <div className="icon">
                   <i className={service.icon}></i>
                 </div>
-                <div className='text'>
+                <div className="text">
                   <h2>
                     <Link
                       onClick={ClickHandler}
-                      href={'/service-single/[slug]'}
-                      as={`/service-single/${service.slug}`}>
+                      href={"/service-single/[slug]"}
+                      as={`/service-single/${service.slug}`}
+                    >
                       {service.title}
                     </Link>
                   </h2>
                 </div>
               </div>
-              <div className='hover-content'>
-                <div className='text'>
+              <div className="hover-content">
+                <div className="text">
                   <h2>
                     <Link
                       onClick={ClickHandler}
-                      href={'/service-single/[slug]'}
-                      as={`/service-single/${service.slug}`}>
+                      href={"/service-single/[slug]"}
+                      as={`/service-single/${service.slug}`}
+                    >
                       {service.title}
                     </Link>
                   </h2>
                   <span>{service.subtitle}</span>
                   <Link
                     onClick={ClickHandler}
-                    href={'/service-single/[slug]'}
-                    as={`/service-single/${service.slug}`}>
-                    Read More<i className='flaticon-right-arrow-1'></i>
+                    href={"/service-single/[slug]"}
+                    as={`/service-single/${service.slug}`}
+                  >
+                    Read More<i className="flaticon-right-arrow-1"></i>
                   </Link>
                 </div>
               </div>
