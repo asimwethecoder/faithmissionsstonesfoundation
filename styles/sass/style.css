@@ -523,7 +523,7 @@ img {
   width: 100%;
   height: 100%;
   border-radius: 55px;
-  background: linear-gradient(left, #00ded8, #00a7d5);
+  background: linear-gradient(to right, #00ded8, #00a7d5);
   transition: opacity 0.5s ease-out;
   opacity: 0;
   z-index: -1;
@@ -826,7 +826,7 @@ img {
 }
 .preloader #particles-background {
   background: #2c2d44;
-  background-image: linear-gradient(45deg, #3f3251 2%, #002025 100%);
+  background-image: linear-gradient(to right, #3f3251 2%, #002025 100%);
 }
 .preloader lesshat-selector {
   -lh-property: 0;
@@ -3507,7 +3507,7 @@ img {
 .wpo-hero-slider .gradient-overlay,
 .static-hero .gradient-overlay,
 .wpo-hero-slider-s2 .gradient-overlay {
-  background: linear-gradient(left, #061408 45%, transparent 65%);
+  background: linear-gradient(to right, #061408 45%, transparent 65%);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -15940,10 +15940,6 @@ img {
   .blog-single-section .more-posts .previous-post .post-control-link:before {
     display: none;
   }
-}
-.blog-single-section .more-posts .previous-post > a > span,
-.blog-single-section .more-posts .next-post > a > span {
-  display: block;
 }
 .blog-single-section .more-posts .post-control-link {
   font-size: 14px;
