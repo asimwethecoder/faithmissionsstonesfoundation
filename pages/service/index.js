@@ -8,7 +8,6 @@ import ProjectSectionS2 from '../../components/ProjectSectionS2/ProjectSectionS2
 import Testimonial2 from '../../components/Testimonial2/Testimonial2';
 import CtaSectionS2 from '../../components/CtaSectionS2/CtaSectionS2';
 import PartnerSectionS2 from '../../components/PartnerSectionS2/PartnerSectionS2';
-import BlogSectionS2 from '../../components/BlogSectionS2/BlogSectionS2';
 import CtaSectionS3 from '../../components/CtaSectionS3/CtaSectionS3';
 import FooterS2 from '../../components/footerS2/FooterS2';
 import Scrollbar from '../../components/scrollbar/scrollbar';
@@ -26,7 +25,6 @@ const ServicePage = () => {
       <Testimonial2 tClass={'testimonial-section-s2 section-padding'} />
       <CtaSectionS2 />
       <PartnerSectionS2 />
-      <BlogSectionS2 tClass={'blog-section-s2'} />
       <CtaSectionS3 />
       <FooterS2 />
       <Scrollbar />

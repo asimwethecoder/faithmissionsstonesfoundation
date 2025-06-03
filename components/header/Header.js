@@ -53,7 +53,7 @@ const Header = props => {
                       <Link
                         onClick={ClickHandler}
                         className='active'
-                        href='home-2'>
+                        href='/home-2'>
                         Home
                       </Link>
                     </li>

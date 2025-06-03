@@ -110,11 +110,6 @@ const HeaderS2 = props => {
                             </li>
                           </ul>
                         </li>
-                        <li>
-                          <Link onClick={ClickHandler} href='/404'>
-                            404 Error
-                          </Link>
-                        </li>
                       </ul>
                     </li>
                     <li className='menu-item-has-children'>

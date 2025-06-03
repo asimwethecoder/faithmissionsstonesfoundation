@@ -14,6 +14,7 @@ import Icon4 from '../../public/images/banck/4.png';
 import Icon5 from '../../public/images/banck/5.png';
 import Icon6 from '../../public/images/banck/6.png';
 import Image from 'next/image';
+import slide00 from '../../public/images/slider/slide00.jpg';
 
 const ClickHandler = () => {
   window.scrollTo(10, 0);
@@ -27,7 +28,7 @@ const FooterS2 = () => {
   };
 
   return (
-    <footer className='wpo-site-footer-s2'>
+    <footer className='wpo-site-footer-s2' style={{ backgroundImage: `url(${slide00.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className='wpo-upper-footer'>
         <div className='container'>
           <div className='row'>
