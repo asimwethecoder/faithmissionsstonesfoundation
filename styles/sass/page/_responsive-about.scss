@@ -1,0 +1,90 @@
+// Responsive styles for About page
+
+@media(max-width: 991px) {
+  .about-section-s4 {
+    .about-image {
+      margin-bottom: 40px;
+    }
+    
+    .tab-wrap {
+      flex-direction: column;
+      
+      .left {
+        margin-bottom: 20px;
+        width: 100%;
+      }
+      
+      .right {
+        width: 100%;
+      }
+    }
+    
+    .author-wrap {
+      flex-direction: column;
+      align-items: flex-start;
+      
+      .author-img {
+        margin-bottom: 20px;
+      }
+      
+      .contact {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media(max-width: 767px) {
+  .about-section-s4 {
+    .about-image {
+      .image1, .image2 {
+        width: 100%;
+        float: none;
+      }
+      
+      .image2 {
+        margin-top: 20px;
+      }
+      
+      .text {
+        position: relative;
+        margin-top: 20px;
+        transform: none;
+        left: 0;
+      }
+    }
+    
+    .right-content {
+      h2, h3 {
+        font-size: 24px;
+      }
+    }
+    
+    .about-tab {
+      .tab {
+        flex-wrap: wrap;
+        
+        button {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 575px) {
+  .about-section-s4 {
+    .about-image {
+      .shape-love {
+        display: none;
+      }
+    }
+    
+    .author-wrap {
+      .author-img li {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}

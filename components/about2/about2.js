@@ -30,18 +30,18 @@ const AboutS2 = props => {
     <section className={'' + props.hclass}>
       <div className='container'>
         <div className='row align-items-center'>
-          <div className='col-lg-6 col-12'>
-            <div className='about-image'>
-              <div className='image1'>
-                <Image src={slide00} alt='' />
+          <div className='col-lg-6 col-md-12 col-12'>
+            <div className='about-image' style={{ marginBottom: '30px' }}>
+              <div className='image1' style={{ width: '100%', maxWidth: '400px', margin: '0 auto' }}>
+                <Image src={slide00} alt='' style={{ width: '100%', height: 'auto' }} />
               </div>
-              <div className='image2'>
-                <Image src={slide012} alt='' />
+              <div className='image2' style={{ width: '100%', maxWidth: '300px', margin: '20px auto 0' }}>
+                <Image src={slide012} alt='' style={{ width: '100%', height: 'auto' }} />
               </div>
-              <div className='shape-love'>
+              <div className='shape-love' style={{ position: 'relative', display: 'block', margin: '20px auto' }}>
                 <Image src={Shape1} alt='' />
               </div>
-              <div className='text'>
+              <div className='text' style={{ position: 'relative', transform: 'none', margin: '20px auto', textAlign: 'center' }}>
                 <h2>Since</h2>
                 <h3>
                   <CountUp end={2025} enableScrollSpy />
@@ -52,13 +52,13 @@ const AboutS2 = props => {
               </div>
             </div>
           </div>
-          <div className='col-lg-6 col-12'>
+          <div className='col-lg-6 col-md-12 col-12'>
             <div className='right-content'>
-              <h2>
+              <h2 style={{ fontSize: 'clamp(20px, 5vw, 28px)' }}>
                 <Image src={Shape3} alt='' />
                 Transforming Lives in the Democratic Republic of Congo.
               </h2>
-              <h3>
+              <h3 style={{ fontSize: 'clamp(18px, 4vw, 24px)' }}>
                 {' '}
                 Helping each other can make<span> the world </span> better
               </h3>
@@ -69,30 +69,33 @@ const AboutS2 = props => {
               </p>
 
               <div className='about-tab'>
-                <div className='tab'>
+                <div className='tab' style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
                   <button
                     className={activeTab === 0 ? 'tablinks active' : 'tablinks'}
-                    onClick={() => handleTabClick(0)}>
+                    onClick={() => handleTabClick(0)}
+                    style={{ marginBottom: '10px' }}>
                     Our Mission
                   </button>
                   <button
                     className={activeTab === 1 ? 'tablinks active' : 'tablinks'}
-                    onClick={() => handleTabClick(1)}>
+                    onClick={() => handleTabClick(1)}
+                    style={{ marginBottom: '10px' }}>
                     Our Vission
                   </button>
                   <button
                     className={activeTab === 2 ? 'tablinks active' : 'tablinks'}
-                    onClick={() => handleTabClick(2)}>
+                    onClick={() => handleTabClick(2)}
+                    style={{ marginBottom: '10px' }}>
                     excellence
                   </button>
                 </div>
                 <div
                   className={activeTab === 0 ? ' tabcontent active' : 'hidden'}>
-                  <div className='tab-wrap'>
-                    <div className='left'>
-                      <Image src={slider013} alt='' />
+                  <div className='tab-wrap' style={{ display: 'flex', flexDirection: 'column' }}>
+                    <div className='left' style={{ width: '100%', marginBottom: '20px' }}>
+                      <Image src={slider013} alt='' style={{ width: '100%', height: 'auto' }} />
                     </div>
-                    <div className='right'>
+                    <div className='right' style={{ width: '100%' }}>
                       <ul>
                         <li>
                           <i className='flaticon-check'></i> Create sustainable
@@ -112,12 +115,12 @@ const AboutS2 = props => {
                 </div>
                 <div
                   className={activeTab === 1 ? ' tabcontent active' : 'hidden'}>
-                  <div className='tab-wrap'>
-                    <div className='left'>
-                      <Image src={About4} alt='' />
+                  <div className='tab-wrap' style={{ display: 'flex', flexDirection: 'column' }}>
+                    <div className='left' style={{ width: '100%', marginBottom: '20px' }}>
+                      <Image src={About4} alt='' style={{ width: '100%', height: 'auto' }} />
                       <VideoModal />
                     </div>
-                    <div className='right'>
+                    <div className='right' style={{ width: '100%' }}>
                       <ul>
                         <li>
                           <i className='flaticon-check'></i> Provide safe
@@ -137,12 +140,12 @@ const AboutS2 = props => {
                 </div>
                 <div
                   className={activeTab === 2 ? ' tabcontent active' : 'hidden'}>
-                  <div className='tab-wrap'>
-                    <div className='left'>
-                      <Image src={About5} alt='' />
+                  <div className='tab-wrap' style={{ display: 'flex', flexDirection: 'column' }}>
+                    <div className='left' style={{ width: '100%', marginBottom: '20px' }}>
+                      <Image src={About5} alt='' style={{ width: '100%', height: 'auto' }} />
                       <VideoModal />
                     </div>
-                    <div className='right'>
+                    <div className='right' style={{ width: '100%' }}>
                       <ul>
                         <li>
                           <i className='flaticon-check'></i>Offer trauma
@@ -161,8 +164,8 @@ const AboutS2 = props => {
                   </div>
                 </div>
               </div>
-              <div className='author-wrap'>
-                <ul className='author-img'>
+              <div className='author-wrap' style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+                <ul className='author-img' style={{ marginBottom: '20px' }}>
                   <li>
                     <Image src={slide00} alt='' />
                   </li>
@@ -173,7 +176,7 @@ const AboutS2 = props => {
                     <Image src={slider1} alt='' />
                   </li>
                 </ul>
-                <div className='author-text'>
+                <div className='author-text' style={{ marginBottom: '20px' }}>
                   1000+ Children{' '}
                   <div className='shape'>
                     <Image src={Shape4} alt='' />
