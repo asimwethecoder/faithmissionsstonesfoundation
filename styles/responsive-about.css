@@ -1,0 +1,83 @@
+/* Responsive styles for About page */
+
+@media (max-width: 991px) {
+  .about-section-s4 .row {
+    flex-direction: column;
+  }
+  
+  .about-section-s4 .about-image {
+    margin-bottom: 40px;
+  }
+  
+  .about-section-s4 .tab-wrap {
+    flex-direction: column !important;
+  }
+  
+  .about-section-s4 .tab-wrap .left {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+  
+  .about-section-s4 .tab-wrap .right {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-section-s4 .about-image .image1,
+  .about-section-s4 .about-image .image2 {
+    width: 100% !important;
+    float: none !important;
+    max-width: 100% !important;
+  }
+  
+  .about-section-s4 .about-image .image2 {
+    margin-top: 20px;
+  }
+  
+  .about-section-s4 .about-image .text {
+    position: relative !important;
+    transform: none !important;
+    left: auto !important;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .about-section-s4 .right-content h2,
+  .about-section-s4 .right-content h3 {
+    font-size: 24px !important;
+  }
+  
+  .about-section-s4 .about-tab .tab {
+    flex-wrap: wrap;
+  }
+  
+  .about-section-s4 .about-tab .tab button {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .about-section-s4 .about-image .shape-love {
+    display: none;
+  }
+  
+  .about-section-s4 .author-wrap .author-img li {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .about-section-s4 .author-wrap {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  
+  .about-section-s4 .author-wrap .author-img {
+    margin-bottom: 20px;
+  }
+  
+  .about-section-s4 .author-wrap .contact {
+    margin-top: 20px;
+  }
+}

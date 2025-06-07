@@ -41,7 +41,7 @@ const Hero = props => {
                 </div>
                 <div className='slide-sub-title'>
                   <h2>
-                    Charities focused
+                    Charity focused
                     <span> education </span> <span className='text'>help</span>
                   </h2>
                 </div>
