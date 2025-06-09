@@ -8,7 +8,7 @@ const Contactpage = () => {
         <div className='office-info'>
           <div className='row'>
             <div className='col col-lg-4 col-md-6 col-12'>
-              <div className='office-info-item'>
+              <div className='office-info-item animated-card'>
                 <div className='office-info-icon'>
                   <div className='icon'>
                     <i className='fi flaticon-home-address'></i>
@@ -25,7 +25,7 @@ const Contactpage = () => {
               </div>
             </div>
             <div className='col col-lg-4 col-md-6 col-12'>
-              <div className='office-info-item active'>
+              <div className='office-info-item active animated-card'>
                 <div className='office-info-icon'>
                   <div className='icon'>
                     <i className='fi flaticon-phone-call'></i>
@@ -38,7 +38,7 @@ const Contactpage = () => {
               </div>
             </div>
             <div className='col col-lg-4 col-md-6 col-12'>
-              <div className='office-info-item'>
+              <div className='office-info-item animated-card'>
                 <div className='office-info-icon'>
                   <div className='icon'>
                     <i className='fi flaticon-mail-1'></i>
@@ -47,13 +47,52 @@ const Contactpage = () => {
                 <div className='office-info-text'>
                   <h2>Address</h2>
                   <p>
-                    contact@aidUs.com <br /> info@aidUs.com
+                    info@faithmissionsstonesfoundation.org
+                    <br />
+                    &nbsp;
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <style jsx>{`
+          .animated-card {
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: transform 0.3s ease;
+            animation: bounce 2s infinite alternate;
+            animation-delay: calc(var(--animation-order, 0) * 0.2s);
+          }
+          
+          .col:nth-child(1) .animated-card {
+            --animation-order: 1;
+          }
+          
+          .col:nth-child(2) .animated-card {
+            --animation-order: 2;
+          }
+          
+          .col:nth-child(3) .animated-card {
+            --animation-order: 3;
+          }
+          
+          .animated-card:hover {
+            transform: translateY(-10px);
+          }
+          
+          @keyframes bounce {
+            0% {
+              transform: translateY(0);
+            }
+            100% {
+              transform: translateY(-10px);
+            }
+          }
+        `}</style>
 
         <div className='contact-wrap'>
           <div className='row'>

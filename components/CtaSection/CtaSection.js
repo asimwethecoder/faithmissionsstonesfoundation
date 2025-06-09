@@ -13,7 +13,27 @@ const ClickHandler = () => {
 
 const CtaSection = props => {
   return (
-    <section className={'' + props.hclass}>
+    <section 
+      className={'' + props.hclass}
+      style={{
+        backgroundImage: `url(${volunteer.src})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        position: 'relative',
+        zIndex: 1
+      }}
+    >
+      <div 
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          background: 'rgba(0, 0, 0, 0.6)',
+          zIndex: -1
+        }}
+      ></div>
       <div className='container'>
         <div className='content'>
           <span>Compassion in Action: Join Us Today</span>

@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
-import VideoModal from '../ModalVideo/VideoModal';
 import CountUp from 'react-countup';
-import About1 from '../../public/images/about/about-3.jpg';
-import About2 from '../../public/images/about/about-4.jpg';
-import About3 from '../../public/images/about/about-5.jpg';
-import About4 from '../../public/images/about/about-6.jpg';
-import About5 from '../../public/images/about/about-7.jpg';
+import CapeTown from '../../public/images/about/capetowncity.jpeg';
 import Shape1 from '../../public/images/about/shape4.svg';
 import Shape2 from '../../public/images/about/shape11.svg';
 import Shape3 from '../../public/images/healthcare.svg';
@@ -32,16 +27,45 @@ const AboutS2 = props => {
         <div className='row align-items-center'>
           <div className='col-lg-6 col-md-12 col-12'>
             <div className='about-image' style={{ marginBottom: '30px' }}>
-              <div className='image1' style={{ width: '100%', maxWidth: '400px', margin: '0 auto' }}>
-                <Image src={slide00} alt='' style={{ width: '100%', height: 'auto' }} />
+              <div
+                className='image1'
+                style={{ width: '100%', maxWidth: '400px', margin: '0 auto' }}>
+                <Image
+                  src={slide00}
+                  alt=''
+                  style={{ width: '100%', height: 'auto' }}
+                />
               </div>
-              <div className='image2' style={{ width: '100%', maxWidth: '300px', margin: '20px auto 0' }}>
-                <Image src={slide012} alt='' style={{ width: '100%', height: 'auto' }} />
+              <div
+                className='image2'
+                style={{
+                  width: '100%',
+                  maxWidth: '300px',
+                  margin: '20px auto 0',
+                }}>
+                <Image
+                  src={slide012}
+                  alt=''
+                  style={{ width: '100%', height: 'auto' }}
+                />
               </div>
-              <div className='shape-love' style={{ position: 'relative', display: 'block', margin: '20px auto' }}>
+              <div
+                className='shape-love'
+                style={{
+                  position: 'relative',
+                  display: 'block',
+                  margin: '20px auto',
+                }}>
                 <Image src={Shape1} alt='' />
               </div>
-              <div className='text' style={{ position: 'relative', transform: 'none', margin: '20px auto', textAlign: 'center' }}>
+              <div
+                className='text'
+                style={{
+                  position: 'relative',
+                  transform: 'none',
+                  margin: '20px auto',
+                  textAlign: 'center',
+                }}>
                 <h2>Since</h2>
                 <h3>
                   <CountUp end={2025} enableScrollSpy />
@@ -56,7 +80,8 @@ const AboutS2 = props => {
             <div className='right-content'>
               <h2 style={{ fontSize: 'clamp(20px, 5vw, 28px)' }}>
                 <Image src={Shape3} alt='' />
-                Transforming Lives in the Democratic Republic of Congo.
+                Transforming Lives in South Africa and the Democratic Republic
+                of Congo.
               </h2>
               <h3 style={{ fontSize: 'clamp(18px, 4vw, 24px)' }}>
                 {' '}
@@ -64,12 +89,15 @@ const AboutS2 = props => {
               </h3>
               <p>
                 Faith Missions Stone Foundation is dedicated to rescuing
-                children from hazardous mining work and providing comprehensive
-                care through shelter, education, and medical support.
+                children from the streets, hazardous mining work and providing
+                comprehensive care through shelter, education, and medical
+                support.
               </p>
 
               <div className='about-tab'>
-                <div className='tab' style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+                <div
+                  className='tab'
+                  style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
                   <button
                     className={activeTab === 0 ? 'tablinks active' : 'tablinks'}
                     onClick={() => handleTabClick(0)}
@@ -91,9 +119,17 @@ const AboutS2 = props => {
                 </div>
                 <div
                   className={activeTab === 0 ? ' tabcontent active' : 'hidden'}>
-                  <div className='tab-wrap' style={{ display: 'flex', flexDirection: 'column' }}>
-                    <div className='left' style={{ width: '100%', marginBottom: '20px' }}>
-                      <Image src={slider013} alt='' style={{ width: '100%', height: 'auto' }} />
+                  <div
+                    className='tab-wrap'
+                    style={{ display: 'flex', flexDirection: 'column' }}>
+                    <div
+                      className='left'
+                      style={{ width: '100%', marginBottom: '20px' }}>
+                      <Image
+                        src={slider013}
+                        alt=''
+                        style={{ width: '40%', height: 'auto' }}
+                      />
                     </div>
                     <div className='right' style={{ width: '100%' }}>
                       <ul>
@@ -115,10 +151,17 @@ const AboutS2 = props => {
                 </div>
                 <div
                   className={activeTab === 1 ? ' tabcontent active' : 'hidden'}>
-                  <div className='tab-wrap' style={{ display: 'flex', flexDirection: 'column' }}>
-                    <div className='left' style={{ width: '100%', marginBottom: '20px' }}>
-                      <Image src={About4} alt='' style={{ width: '100%', height: 'auto' }} />
-                      <VideoModal />
+                  <div
+                    className='tab-wrap'
+                    style={{ display: 'flex', flexDirection: 'column' }}>
+                    <div
+                      className='left'
+                      style={{ width: '100%', marginBottom: '20px' }}>
+                      <Image
+                        src={CapeTown}
+                        alt=''
+                        style={{ width: '40%', height: 'auto' }}
+                      />
                     </div>
                     <div className='right' style={{ width: '100%' }}>
                       <ul>
@@ -140,10 +183,17 @@ const AboutS2 = props => {
                 </div>
                 <div
                   className={activeTab === 2 ? ' tabcontent active' : 'hidden'}>
-                  <div className='tab-wrap' style={{ display: 'flex', flexDirection: 'column' }}>
-                    <div className='left' style={{ width: '100%', marginBottom: '20px' }}>
-                      <Image src={About5} alt='' style={{ width: '100%', height: 'auto' }} />
-                      <VideoModal />
+                  <div
+                    className='tab-wrap'
+                    style={{ display: 'flex', flexDirection: 'column' }}>
+                    <div
+                      className='left'
+                      style={{ width: '100%', marginBottom: '20px' }}>
+                      <Image
+                        src={CapeTown}
+                        alt=''
+                        style={{ width: '40%', height: 'auto' }}
+                      />
                     </div>
                     <div className='right' style={{ width: '100%' }}>
                       <ul>
@@ -153,7 +203,7 @@ const AboutS2 = props => {
                         </li>
                         <li>
                           <i className='flaticon-check'></i>Eradicate child
-                          labor in DRC mines
+                          labor in South African and DRC mines
                         </li>
                         <li>
                           <i className='flaticon-check'></i>Establish regional
@@ -164,7 +214,13 @@ const AboutS2 = props => {
                   </div>
                 </div>
               </div>
-              <div className='author-wrap' style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+              <div
+                className='author-wrap'
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'flex-start',
+                }}>
                 <ul className='author-img' style={{ marginBottom: '20px' }}>
                   <li>
                     <Image src={slide00} alt='' />
