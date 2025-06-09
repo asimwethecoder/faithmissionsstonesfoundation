@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../header/Header";
+import Logo from '/public/images/FaithMineralsStoneFoundationLogo.jpeg';
 
 export default function Navbar(props) {
   const [scroll, setScroll] = React.useState(0);
@@ -17,7 +18,7 @@ export default function Navbar(props) {
     <div className={className}>
       <Header
         hclass={props.hclass}
-        Logo={props.Logo}
+        Logo={props.Logo || Logo}
         topbarClass={props.topbarClass}
       />
     </div>

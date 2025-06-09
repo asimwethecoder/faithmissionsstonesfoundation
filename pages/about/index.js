@@ -10,7 +10,7 @@ import ProjectSectionS2 from '../../components/ProjectSectionS2/ProjectSectionS2
 import Testimonial2 from '../../components/Testimonial2/Testimonial2';
 import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar';
-import Logo from '/public/images/logo-2.svg';
+import Logo from '/public/images/FaithMineralsStoneFoundationLogo.jpeg';
 import Head from 'next/head';
 
 const AboutPage = () => {

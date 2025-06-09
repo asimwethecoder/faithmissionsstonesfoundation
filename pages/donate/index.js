@@ -4,7 +4,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import PageTitle from '../../components/pagetitle/PageTitle';
 import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar';
-import Logo from '../../public/images/logo-2.svg';
+import Logo from '/public/images/FaithMineralsStoneFoundationLogo.jpeg';
 import peyimg1 from '../../public/images/checkout/img-1.png';
 import peyimg2 from '../../public/images/checkout/img-2.png';
 import peyimg3 from '../../public/images/checkout/img-3.png';

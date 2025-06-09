@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Services from '../../pages/api/Services';
+import Logo from '/public/images/FaithMineralsStoneFoundationLogo.jpeg';
 
 import shape1 from '../../public/images/f-shape1.svg';
 import shape2 from '../../public/images/f-shape-2.svg';
@@ -131,6 +132,19 @@ const Footer = props => {
         <div className='container'>
           <div className='row'>
             <div className='col col-xs-12'>
+              <div className='logo' style={{ marginBottom: '15px', textAlign: 'center' }}>
+                <Image 
+                  src={Logo} 
+                  alt='FMSF logo'
+                  width={80}
+                  height={30}
+                  style={{
+                    objectFit: 'contain',
+                    borderRadius: '10px',
+                    padding: '5px',
+                  }}
+                />
+              </div>
               <p className='copyright'>
                 {' '}
                 &copy; 2025{' '}

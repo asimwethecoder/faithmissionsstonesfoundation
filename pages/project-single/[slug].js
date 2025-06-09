@@ -6,7 +6,7 @@ import PageTitle from '../../components/pagetitle/PageTitle';
 import Scrollbar from '../../components/scrollbar/scrollbar';
 import Projects from '../../pages/api/projects';
 import Footer from '../../components/footer/Footer';
-import logo from '../../public/images/logo-2.svg';
+import logo from '/public/images/FaithMineralsStoneFoundationLogo.jpeg';
 import psingle1 from '../../public/images/project-details/sing1.jpg';
 import psingle2 from '../../public/images/project-details/sing2.jpg';
 import Image from 'next/image';

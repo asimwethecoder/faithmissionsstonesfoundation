@@ -9,7 +9,7 @@ import Product from './product';
 import api from '../../pages/api';
 import ProductTabs from './alltab';
 import Footer from '../../components/footer/Footer';
-import Logo from '../../public/images/logo-2.svg';
+import Logo from '/public/images/FaithMineralsStoneFoundationLogo.jpeg';
 
 const ProductSinglePage = props => {
   const router = useRouter();

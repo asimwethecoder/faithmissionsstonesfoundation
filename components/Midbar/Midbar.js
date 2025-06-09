@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../public/images/logo.svg';
+import Logo from '/public/images/FaithMineralsStoneFoundationLogo.jpeg';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -13,7 +13,17 @@ const Midbar = () => {
         <div className='row align-items-center'>
           <div className='col-lg-3 col-12'>
             <Link onClick={ClickHandler} href='/' className='logo-mid'>
-              <Image src={Logo} alt='' />
+              <Image
+                src={Logo}
+                alt='FMSF Logo'
+                width={120}
+                height={30}
+                style={{
+                  objectFit: 'contain',
+                  borderRadius: '10px',
+                  padding: '5px',
+                }}
+              />
             </Link>
           </div>
           <div className='col-lg-9 col-12'>
