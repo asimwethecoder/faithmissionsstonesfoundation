@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import { removeFromCart } from '../../store/actions/action';
 import HeaderTopbarS2 from '../HeaderTopbarS2/HeaderTopbarS2';
 import Image from 'next/image';
+import Logo from '/public/images/FaithMineralsStoneFoundationLogo.jpeg';
 
 const HeaderS2 = props => {
   const [menuActive, setMenuState] = useState(false);
@@ -37,7 +38,17 @@ const HeaderS2 = props => {
                     onClick={ClickHandler}
                     className='navbar-brand'
                     href='/home-2'>
-                    <Image src={props.Logo} alt='logo' />
+                    <Image
+                      src={Logo}
+                      alt='FMSF logo'
+                      width={80}
+                      height={30}
+                      style={{
+                        objectFit: 'contain',
+                        borderRadius: '10px',
+                        padding: '5px',
+                      }}
+                    />
                   </Link>
                 </div>
               </div>

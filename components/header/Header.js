@@ -6,6 +6,7 @@ import { removeFromCart } from '../../store/actions/action';
 import HeaderTopbar from '../HeaderTopbar/HeaderTopbar';
 import Midbar from '../Midbar/Midbar';
 import Image from 'next/image';
+import Logo from '/public/images/FaithMineralsStoneFoundationLogo.jpeg';
 
 const Header = props => {
   const [menuActive, setMenuState] = useState(false);
@@ -37,7 +38,17 @@ const Header = props => {
                     onClick={ClickHandler}
                     className='navbar-brand'
                     href='/home'>
-                    <Image src={props.Logo} alt='logo' />
+                    <Image
+                      src={Logo}
+                      alt='FMSF logo'
+                      width={80}
+                      height={30}
+                      style={{
+                        objectFit: 'contain',
+                        borderRadius: '10px',
+                        padding: '5px',
+                      }}
+                    />
                   </Link>
                 </div>
               </div>

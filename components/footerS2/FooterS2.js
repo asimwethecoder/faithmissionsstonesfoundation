@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Logo from '/public/images/logo-2.svg';
+import Logo from '/public/images/FaithMineralsStoneFoundationLogo.jpeg';
 import Services from '../../pages/api/Services';
 
 import shape1 from '../../public/images/f-shape5.svg';
@@ -135,7 +135,17 @@ const FooterS2 = () => {
           <div className='row g-0 align-items-center'>
             <div className='col col-lg-2 col-12'>
               <div className='logo'>
-                <Image src={Logo} alt='blog' />
+                <Image
+                  src={Logo}
+                  alt='FMSF Logo'
+                  width={100} // Set fixed width
+                  height={30} // Set fixed height while maintaining aspect ratio
+                  style={{
+                    objectFit: 'contain',
+                    borderRadius: '10px',
+                    padding: '5px',
+                  }}
+                />
               </div>
             </div>
             <div className='col col-lg-6 col-12'>
