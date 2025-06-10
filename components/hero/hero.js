@@ -36,7 +36,8 @@ const Hero = props => {
               <div className='slide-content'>
                 <div className='slide-title'>
                   <span>
-                    <Image src={shape1} alt='' /> Rescuing Children from Mines.
+                    <Image src={shape1} alt='' /> Rescuing Children from the
+                    Street and Mines.
                   </span>
                 </div>
                 <div className='slide-sub-title'>
@@ -80,8 +81,8 @@ const Hero = props => {
               <div className='slide-content'>
                 <div className='slide-title'>
                   <span>
-                    <Image src={shape1} alt='' /> We are always open for
-                    children
+                    <Image src={shape1} alt='' /> We are always open for South
+                    African children in need.
                   </span>
                 </div>
                 <div className='slide-sub-title'>

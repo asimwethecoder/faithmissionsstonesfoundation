@@ -36,7 +36,8 @@ const Hero2 = props => {
               <div className='slide-content'>
                 <div className='slide-title'>
                   <span>
-                    <Image src={shape1} alt='' /> Rescuing Children from Mines.
+                    <Image src={shape1} alt='' /> Rescuing Children from the
+                    streets.
                   </span>
                 </div>
                 <div className='slide-sub-title'>
