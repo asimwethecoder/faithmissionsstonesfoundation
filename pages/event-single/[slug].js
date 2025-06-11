@@ -3,7 +3,6 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Navbar from '../../components/Navbar/Navbar';
 import PageTitle from '../../components/pagetitle/PageTitle';
-
 import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar';
 import Logo from '/public/images/FaithMineralsStoneFoundationLogo.jpeg';
@@ -14,7 +13,6 @@ import Image from 'next/image';
 
 const EventSinglePage = props => {
   const router = useRouter();
-
   const EventSinglePage = event.find(item => item.slug === router.query.slug);
 
   const ClickHandler = () => {
@@ -40,25 +38,32 @@ const EventSinglePage = props => {
   return (
     <Fragment>
       <Navbar hclass={'wpo-site-header'} Logo={Logo} />
-      <PageTitle pageTitle={EventSinglePage?.title} pagesub={'About'} />
+      <PageTitle
+        pageTitle={EventSinglePage?.title}
+        pagesub={'Community Outreach'}
+      />
       <div className='event-details-area section-padding'>
         <div className='container'>
           <div className='row'>
             <div className='col col-lg-8'>
               <div className='event-item'>
                 <div className='event-img'>
-                  <Image src={EventSinglePage?.eSimg} alt='' />
+                  <Image
+                    src={EventSinglePage?.eSimg}
+                    alt='Community outreach visual'
+                  />
                 </div>
                 <div className='event-details-text'>
-                  <h2>{EventSinglePage?.title}</h2>
+                  <h2>{EventSinglePage?.subtitle}</h2>
                   <p>
-                    On the other hand, we denounce with righteous indignation
-                    and dislike men who are so beguiled and demoralized by the
-                    charms of pleasure of the moment, so blinded by desire, that
-                    they cannot foresee the pain and trouble that are bound to
-                    ensue and equal blame belongs to those who fail in their
-                    duty through weakness of will, which is the same as saying
-                    through shrinking from toil and pain.
+                    Our initiatives address urgent challenges facing vulnerable
+                    youth in South Africa's urban centers. Through coordinated
+                    interventions in cities like{' '}
+                    {EventSinglePage?.location?.split(',')[0]}, we combine
+                    immediate relief with sustainable solutions to break the
+                    cycle of street dependency. Our evidence-based approaches
+                    are developed in partnership with local communities and
+                    government stakeholders.
                   </p>
                 </div>
                 <div className='event-details-wrap'>
@@ -70,7 +75,7 @@ const EventSinglePage = props => {
                             activeTab === 0 ? 'nav-link active' : 'nav-link'
                           }
                           onClick={() => handleTabClick(0)}>
-                          Event Schedule
+                          Program Schedule
                         </a>
                       </li>
                       <li className='nav-item'>
@@ -79,7 +84,7 @@ const EventSinglePage = props => {
                             activeTab === 1 ? 'nav-link active' : 'nav-link'
                           }
                           onClick={() => handleTabClick(1)}>
-                          Map Location
+                          Venue Location
                         </a>
                       </li>
                       <li className='nav-item'>
@@ -88,7 +93,7 @@ const EventSinglePage = props => {
                             activeTab === 2 ? 'nav-link active' : 'nav-link'
                           }
                           onClick={() => handleTabClick(2)}>
-                          Contact Us
+                          Get Involved
                         </a>
                       </li>
                     </ul>
@@ -98,30 +103,39 @@ const EventSinglePage = props => {
                       <div className={activeTab === 0 ? 'active' : 'hidden'}>
                         <div id='Schedule' className='tab-pane active'>
                           <p>
-                            These cases are perfectly simple and easy to
-                            distinguish. In a free hour, when our power of
-                            choice is untrammelled and when nothing prevents our
-                            being able to do what we like best, every pleasure
-                            is to be welcomed and every pain avoided.
+                            Our structured programs combine immediate aid with
+                            long-term empowerment. Each initiative follows three
+                            phases:
                           </p>
                           <ul>
-                            <li>The wise man therefore in these matters.</li>
                             <li>
-                              In a free hour, when our power of choice and when
-                              nothing.
+                              Phase 1: Street outreach and emergency
+                              stabilization
                             </li>
-                            <li>Else he pains to avoid pains.</li>
                             <li>
-                              We denounce with righteous indignation dislike
-                              men.{' '}
+                              Phase 2: Health/psychological assessments and
+                              family tracing
                             </li>
-                            <li>Which is the same as saying through.</li>
                             <li>
-                              The wise man therefore always holds in these
-                              matters.
+                              Phase 3: Educational/vocational integration and
+                              community reintegration
                             </li>
-                            <li>Power of choice and when nothing.</li>
-                            <li>Pains to avoid worse pains.</li>
+                            <li>
+                              24/7 crisis response teams in high-risk urban
+                              areas
+                            </li>
+                            <li>
+                              Partnerships with local SAPS Social Crime
+                              Prevention units
+                            </li>
+                            <li>
+                              Monthly community feedback sessions in township
+                              hubs
+                            </li>
+                            <li>
+                              Quarterly progress reviews with Social Development
+                              Department
+                            </li>
                           </ul>
                         </div>
                       </div>
@@ -129,9 +143,9 @@ const EventSinglePage = props => {
                         <div id='Map' className='tab-pane'>
                           <div className='contact-map'>
                             <iframe
-                              src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.9147703055!2d-74.11976314309273!3d40.69740344223377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbd!4v1547528325671'
+                              src='https://www.google.com/maps/embed?pb=!1m18!1m14!1m3!1d13246.066092735887!2d18.4231426!3d-33.9252972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc6766f3a41a7d%3A0xe4c2846ef4d8623!2sCape+Town+International+Convention+Centre!5e0!3m2!1sen!2sza!4v1563442160088!5m2!1sen!2sza'
                               allowFullScreen
-                              title='Google Map'
+                              title='SA Outreach Locations'
                               width='600'
                               height='450'
                               frameBorder='0'
@@ -142,6 +156,7 @@ const EventSinglePage = props => {
                       <div className={activeTab === 2 ? 'active' : 'hidden'}>
                         <div id='Contact' className='tab-pane'>
                           <div className='event-contact'>
+                            <h3>Join Our Urban Outreach Team</h3>
                             <div className='donations-details'>
                               <ContactForm />
                             </div>
@@ -156,13 +171,13 @@ const EventSinglePage = props => {
             <div className='col col-lg-4 col-12'>
               <div className='blog-sidebar'>
                 <div className='widget search-widget'>
-                  <h3>search here</h3>
+                  <h3>Find Outreach Updates</h3>
                   <form onSubmit={handleSubmit}>
                     <div>
                       <input
                         type='text'
                         className='form-control'
-                        placeholder='Search Post..'
+                        placeholder='Search initiatives...'
                         value={searchTerm}
                         onChange={handleInputChange}
                       />
@@ -173,12 +188,12 @@ const EventSinglePage = props => {
                   </form>
                 </div>
                 <div className='widget recent-post-widget'>
-                  <h3>Related Posts</h3>
+                  <h3>Recent Outreach Updates</h3>
                   <div className='posts'>
                     {blogs.slice(0, 3).map((blog, bitem) => (
                       <div className='post' key={bitem}>
                         <div className='img-holder'>
-                          <Image src={blog.recent} alt='' />
+                          <Image src={blog.recent} alt='Program update' />
                         </div>
                         <div className='details'>
                           <span className='date'>
@@ -189,7 +204,7 @@ const EventSinglePage = props => {
                             <Link
                               onClick={ClickHandler}
                               href={'/blog-single/[slug]'}
-                              as={`/blog-single/${blog.slug}`}>
+                              as={`/blog-single/\${blog.slug}`}>
                               {blog.title}
                             </Link>
                           </h4>
@@ -199,48 +214,48 @@ const EventSinglePage = props => {
                   </div>
                 </div>
                 <div className='widget tag-widget'>
-                  <h3>Populer Tags</h3>
+                  <h3>Focus Areas</h3>
                   <ul>
                     <li>
                       <Link
                         onClick={ClickHandler}
                         href='/event-single/Custom-Fabrication'>
-                        Giving Back
+                        Township Support
                       </Link>
                     </li>
                     <li>
                       <Link
                         onClick={ClickHandler}
                         href='/event-single/Custom-Fabrication'>
-                        Relief Effort
+                        Street Youth
                       </Link>
                     </li>
                     <li>
                       <Link
                         onClick={ClickHandler}
                         href='/event-single/Custom-Fabrication'>
-                        Positive Impact
+                        HIV Prevention
                       </Link>
                     </li>
                     <li>
                       <Link
                         onClick={ClickHandler}
                         href='/event-single/Custom-Fabrication'>
-                        Kindness
+                        Skills Development
                       </Link>
                     </li>
                     <li>
                       <Link
                         onClick={ClickHandler}
                         href='/event-single/Custom-Fabrication'>
-                        Helping
+                        Legal Advocacy
                       </Link>
                     </li>
                     <li>
                       <Link
                         onClick={ClickHandler}
                         href='/event-single/Custom-Fabrication'>
-                        Care
+                        Urban Outreach
                       </Link>
                     </li>
                   </ul>
@@ -255,4 +270,5 @@ const EventSinglePage = props => {
     </Fragment>
   );
 };
+
 export default EventSinglePage;

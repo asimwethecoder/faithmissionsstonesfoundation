@@ -8,13 +8,11 @@ import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar';
 import Logo from '/public/images/FaithMineralsStoneFoundationLogo.jpeg';
 import shape from '../../public/images/cause-single/shape.svg';
-import Icon from '../../public/images/cause-single/icon.svg';
-import DonationForm from './DonationForm';
 import SidebarSection from './SidebarSection';
-import simg1 from '../../public/images/image-gallery/1.jpg';
-import simg2 from '../../public/images/image-gallery/2.jpg';
-import simg3 from '../../public/images/image-gallery/3.jpg';
-import simg4 from '../../public/images/image-gallery/4.jpg';
+import simg1 from '../../public/images/image-gallery/img1.jpg';
+import simg2 from '../../public/images/image-gallery/img08.jpg';
+import simg3 from '../../public/images/image-gallery/img03.jpg';
+import simg4 from '../../public/images/image-gallery/img1.jpg';
 import Accordion from '../../components/Accordion/Accordion';
 
 const CausesSinglePage = () => {
@@ -40,25 +38,12 @@ const CausesSinglePage = () => {
                 <div className='case-details-content'>
                   <h2>{CausesSingle?.title}</h2>
                   <p>
-                    Lorem Ipsum is simply dummy a of the printing and type
-                    setting industry Loreaim Ipsum has been the industry's
-                    standard dummy
+                    This initiative directly addresses pressing challenges in
+                    South Africa's region, where interventions are critically
+                    needed to achieve sustainable development goals.
                   </p>
-                  <h3>This Poor it Important So Support</h3>
-                  <div className='notice'>
-                    <p>
-                      <span>Notice:</span> Test mode is enabled. While in test
-                      mode no live donations are processed.
-                    </p>
-                    <div className='icon'>
-                      <Image src={Icon} alt='' />
-                    </div>
-                  </div>
-                  <h4>Your Donation:</h4>
-                  <DonationForm />
                 </div>
                 <div className='image-gallery'>
-                  <h3>Donation Gallery:</h3>
                   <ul>
                     <li>
                       <Image src={simg1} alt='' />
