@@ -10,9 +10,9 @@ import Shape6 from '../../public/images/about/shape7.svg';
 import Shape7 from '../../public/images/about/shape2.svg';
 import Shape8 from '../../public/images/about/shape8.svg';
 import Image from 'next/image';
-import slide00 from '../../public/images/slider/slide00.jpg';
+import slide00 from '../../public/images/slider/slide123.jpg';
 import slide012 from '../../public/images/slider/slide012.jpg';
-import slider1 from '../../public/images/slider/slider1.jpg';
+import slider1 from '../../public/images/slider/slide1234.jpg';
 import slider013 from '../../public/images/slider/slider013.jpg';
 
 const AboutS2 = props => {
