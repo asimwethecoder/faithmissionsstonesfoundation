@@ -1,5 +1,4 @@
 import React from 'react';
-import VideoModal from '../ModalVideo/VideoModal';
 import Link from 'next/link';
 import Services from '../../pages/api/Services';
 import Img1 from '../../public/images/service/1.jpg';
@@ -75,7 +74,6 @@ const ServiceSection = props => {
                 <ul>
                   <li>
                     <Image src={Img1} alt='' />
-                    <VideoModal />
                   </li>
                   <li>
                     <Image src={Img2} alt='' />

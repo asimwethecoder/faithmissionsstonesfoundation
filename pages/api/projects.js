@@ -1,10 +1,10 @@
 import pimg1 from '../../public/images/project/1.jpg';
 import pimg2 from '../../public/images/project/2.jpg';
-import pimg3 from '../../public/images/project/3.jpg';
+import pimg3 from '../../public/images/project/03.jpg';
 import pimg4 from '../../public/images/project/4.jpg';
 import pimg5 from '../../public/images/project/5.jpg';
 import pimg6 from '../../public/images/project/6.jpg';
-import pimg7 from '../../public/images/project/7.jpg';
+import pimg7 from '../../public/images/project/07.jpg';
 import pimg8 from '../../public/images/project/8.jpg';
 import pimg9 from '../../public/images/project/9.jpg';
 
