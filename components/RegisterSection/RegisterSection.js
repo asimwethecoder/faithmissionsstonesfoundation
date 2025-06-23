@@ -25,7 +25,7 @@ const RegisterSection = () => {
               <Image src={Shape1} alt='' />
               Non profit Charity Fundation
             </span>
-            <h2>Click To Registered To be a memeber of us</h2>
+            <h2>Click To Register To be a memeber of us</h2>
             <Link onClick={ClickHandler} href='/contact'>
               Contact Now <i className='flaticon-right-arrow-1'></i>
             </Link>
