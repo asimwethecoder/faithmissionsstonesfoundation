@@ -10,6 +10,7 @@ import api from '../../pages/api';
 import ProductTabs from './alltab';
 import Footer from '../../components/footer/Footer';
 import Logo from '/public/images/FaithMineralsStoneFoundationLogo.jpeg';
+import Head from 'next/head';
 
 const ProductSinglePage = props => {
   const router = useRouter();
@@ -32,6 +33,14 @@ const ProductSinglePage = props => {
 
   return (
     <Fragment>
+      <Head>
+        <title>{item?.title} - Faith Missions Stone Foundation Shop</title>
+        <meta name="description" content={`${item?.title} - ${item?.description || 'Support Faith Missions Stone Foundation by purchasing this item. Proceeds help South African street children and orphans.'}`} />
+        <meta name="keywords" content={`${item?.title}, Faith Missions merchandise, charity shop, support street children`} />
+        <meta property="og:title" content={`${item?.title} - Faith Missions Shop`} />
+        <meta property="og:description" content={item?.description} />
+        <link rel="canonical" href={`https://faithmissionsstonefoundation.org/shop-single/${item?.slug}`} />
+      </Head>
       <Navbar hclass={'wpo-site-header'} Logo={Logo} />
       <PageTitle pageTitle={'Product Single'} />
       <section className='shop-single-section section-padding'>

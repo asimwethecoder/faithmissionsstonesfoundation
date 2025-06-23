@@ -20,8 +20,13 @@ function MyApp({ Component, pageProps }) {
     <div>
       <Head>
         <title>
-          Faith Missions Stone Foundation – Charity Nonprofit Organisation
+          Faith Missions Stone Foundation – South African Charity for Street Children & Orphans
         </title>
+        <meta property="og:title" content="Faith Missions Stone Foundation - South African Charity" />
+        <meta property="og:description" content="Supporting street children and orphans across South Africa's townships and DRC mining regions" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://faithmissionsstonefoundation.org" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>

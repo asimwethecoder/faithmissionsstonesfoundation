@@ -16,6 +16,7 @@ import Footer from '../../components/footer/Footer';
 import logo from '/public/images/FaithMineralsStoneFoundationLogo.jpeg';
 import VideoModal from '../../components/ModalVideo/VideoModal';
 import Image from 'next/image';
+import Head from 'next/head';
 
 const ServiceSinglePage = props => {
   const router = useRouter();
@@ -24,6 +25,14 @@ const ServiceSinglePage = props => {
 
   return (
     <Fragment>
+      <Head>
+        <title>{serviceDetails?.title} - Faith Missions Stone Foundation Services</title>
+        <meta name="description" content={`${serviceDetails?.description} - Faith Missions Stone Foundation's ${serviceDetails?.title} service supporting South African street children and orphans.`} />
+        <meta name="keywords" content={`${serviceDetails?.title}, ${serviceDetails?.tag}, South Africa charity services, street children support`} />
+        <meta property="og:title" content={`${serviceDetails?.title} - Faith Missions Services`} />
+        <meta property="og:description" content={serviceDetails?.description} />
+        <link rel="canonical" href={`https://faithmissionsstonefoundation.org/service-single/${serviceDetails?.slug}`} />
+      </Head>
       <Navbar Logo={logo} hclass={'wpo-site-header'} />
       <PageTitle pageTitle={serviceDetails?.title} pagesub={'Service Single'} />
       <section className='service-single-page section-padding'>

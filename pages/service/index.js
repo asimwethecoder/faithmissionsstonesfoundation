@@ -12,10 +12,19 @@ import CtaSectionS3 from '../../components/CtaSectionS3/CtaSectionS3';
 import FooterS2 from '../../components/footerS2/FooterS2';
 import Scrollbar from '../../components/scrollbar/scrollbar';
 import Logo from '/public/images/FaithMineralsStoneFoundationLogo.jpeg';
+import Head from 'next/head';
 
 const ServicePage = () => {
   return (
     <Fragment>
+      <Head>
+        <title>Our Services - Faith Missions Stone Foundation | South African Programs</title>
+        <meta name="description" content="Explore Faith Missions Stone Foundation's comprehensive services supporting South African street children and orphans: education, healthcare, shelter, legal aid, and township development programs." />
+        <meta name="keywords" content="Faith Missions services, South Africa charity programs, street children services, orphan support, township development, mobile health clinics, education programs" />
+        <meta property="og:title" content="Faith Missions Services - Comprehensive Child Support" />
+        <meta property="og:description" content="Education, healthcare, shelter and legal aid for South African street children" />
+        <link rel="canonical" href="https://faithmissionsstonefoundation.org/service" />
+      </Head>
       <Navbar hclass={'wpo-site-header'} Logo={Logo} />
       <PageTitle pageTitle={'Our Services'} />
       <ServiceSection />

@@ -10,6 +10,7 @@ import logo from '/public/images/FaithMineralsStoneFoundationLogo.jpeg';
 import psingle1 from '../../public/images/project-details/sing1.jpg';
 import psingle2 from '../../public/images/project-details/sing2.jpg';
 import Image from 'next/image';
+import Head from 'next/head';
 
 const ClickHandler = () => {
   window.scrollTo(10, 0);
@@ -21,6 +22,14 @@ const ProjectSingle = props => {
 
   return (
     <Fragment>
+      <Head>
+        <title>{ProjectSingle?.title} - Faith Missions Stone Foundation Projects</title>
+        <meta name="description" content={`${ProjectSingle?.docomunt} Located in ${ProjectSingle?.location}. Support our ${ProjectSingle?.tag} initiative.`} />
+        <meta name="keywords" content={`${ProjectSingle?.title}, ${ProjectSingle?.tag}, ${ProjectSingle?.location}, South Africa projects, street children projects`} />
+        <meta property="og:title" content={`${ProjectSingle?.title} - Faith Missions Project`} />
+        <meta property="og:description" content={ProjectSingle?.docomunt} />
+        <link rel="canonical" href={`https://faithmissionsstonefoundation.org/project-single/${ProjectSingle?.slug}`} />
+      </Head>
       <Navbar Logo={logo} hclass={'wpo-site-header'} />
       <PageTitle pageTitle='Child Rights Legal Initiative' />
       <section className='project-single-page section-padding'>

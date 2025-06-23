@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /checkout/
+Disallow: /cart/
+Disallow: /order-received/
+Disallow: /shop/
+Disallow: /donate/
+
+# Sitemap location
+Sitemap: https://faithmissionsstonefoundation.org/sitemap.xml

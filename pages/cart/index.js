@@ -13,6 +13,7 @@ import {
 } from '../../store/actions/action';
 import Footer from '../../components/footer/Footer';
 import Logo from '/public/images/FaithMineralsStoneFoundationLogo.jpeg';
+import Head from 'next/head';
 
 const CartPage = props => {
   const ClickHandler = () => {
@@ -23,6 +24,13 @@ const CartPage = props => {
 
   return (
     <Fragment>
+      <Head>
+        <title>Shopping Cart - Faith Missions Stone Foundation</title>
+        <meta name="description" content="Review your Faith Missions Stone Foundation merchandise cart. Your purchase supports South African street children and orphans." />
+        <meta name="keywords" content="Faith Missions cart, charity checkout, support street children, donation merchandise" />
+        <link rel="canonical" href="https://faithmissionsstonefoundation.org/cart" />
+        <meta name="robots" content="noindex, follow" />
+      </Head>
       <Navbar hclass={'wpo-site-header'} Logo={Logo} />
       <PageTitle pageTitle={'Cart'} pagesub={'Cart'} />
       <div className='cart-area section-padding'>

@@ -9,6 +9,7 @@ import Contact from './contact';
 import logo from '/public/images/FaithMineralsStoneFoundationLogo.jpeg';
 import SkillProgress from './SkillProgress';
 import Image from 'next/image';
+import Head from 'next/head';
 
 const TeamSinglePage = props => {
   const router = useRouter();
@@ -17,6 +18,14 @@ const TeamSinglePage = props => {
 
   return (
     <Fragment>
+      <Head>
+        <title>{TeamSingles?.title} - Faith Missions Stone Foundation Team</title>
+        <meta name="description" content={`Meet ${TeamSingles?.title}, ${TeamSingles?.subtitle} at Faith Missions Stone Foundation. Learn about our team supporting South African street children.`} />
+        <meta name="keywords" content={`${TeamSingles?.title}, Faith Missions team, South Africa charity staff, volunteer coordinator`} />
+        <meta property="og:title" content={`${TeamSingles?.title} - Faith Missions Team`} />
+        <meta property="og:description" content={`${TeamSingles?.subtitle} supporting street children across South Africa`} />
+        <link rel="canonical" href={`https://faithmissionsstonefoundation.org/volunteer-single/${TeamSingles?.slug}`} />
+      </Head>
       <Navbar Logo={logo} hclass={'wpo-site-header'} />
       <PageTitle pageTitle={TeamSingles?.title} pagesub={'Team'} />
       <div className='team-pg-area section-padding'>
