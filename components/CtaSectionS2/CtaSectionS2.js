@@ -17,10 +17,10 @@ const CtaSectionS2 = () => {
               <h2>
                 {' '}
                 <Image src={shape} alt='' />
-                Rescue a Child from Mining Work Today
+                Rescue a Child from the Streets Today
               </h2>
               <h3>
-                Your Support Creates <span>Safe Futures</span> in the DRC
+                Your Support Creates <span>Safe Futures</span> in South Africa
               </h3>
             </div>
           </div>

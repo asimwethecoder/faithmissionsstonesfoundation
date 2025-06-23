@@ -16,9 +16,9 @@ const TeamSectionS2 = (props) => {
                 <div className="row justify-content-center">
                     <div className="col-lg-6 col-12">
                         <div className="section-title text-center">
-                            <span>We are always open for children</span>
+                            <span>We are always open for South African children</span>
                             <h2>Helping each other can
-                                make <span>world</span> better</h2>
+                                make <span>South Africa</span> better</h2>
                         </div>
                     </div>
                 </div>

@@ -21,11 +21,11 @@ const CtaSectionS3 = () => {
                   {' '}
                   <Image src={Shape} alt='' /> Faith Missions Stone Foundation
                 </h2>
-                <h3>From Mine Rescue to Sustainable Futures</h3>
+                <h3>From Street Rescue to Sustainable Futures</h3>
                 <ul>
                   <li>
                     <i className='flaticon-check'></i>24/7 Local Response Teams
-                    in Mining Regions
+                    in SA Townships & DRC Mining Regions
                   </li>
                   <li>
                     <i className='flaticon-check'></i>Child-Safe Environments
