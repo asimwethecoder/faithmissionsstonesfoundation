@@ -19,10 +19,10 @@ const ServiceSection2 = (props) => {
             <div className="section-title">
               <span>
                 <Image src={Shape} alt="" />
-                Together, We Can Change Lives Forever.
+                Together, We Can Transform South Africa.
               </span>
               <h2>
-                our <span>non-profit</span> services you must love
+                our <span>South African</span> services you must love
               </h2>
             </div>
           </div>

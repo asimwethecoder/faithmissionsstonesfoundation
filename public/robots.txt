@@ -13,4 +13,5 @@ Disallow: /order-received/
 Disallow: /shop/
 Disallow: /donate/
 
+# Sitemap location
 Sitemap: https://faithmissionsstonefoundation.org/sitemap.xml

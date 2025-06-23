@@ -7,6 +7,7 @@ import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar';
 import Logo from '/public/images/FaithMineralsStoneFoundationLogo.jpeg';
 import Image from 'next/image';
+import Head from 'next/head';
 
 const ProjectPage = () => {
   const ClickHandler = () => {
@@ -15,6 +16,14 @@ const ProjectPage = () => {
 
   return (
     <Fragment>
+      <Head>
+        <title>Our Projects - Faith Missions Stone Foundation | South African Initiatives</title>
+        <meta name="description" content="Explore Faith Missions Stone Foundation's projects supporting street children and orphans across South Africa's townships and DRC mining regions. See our impact." />
+        <meta name="keywords" content="Faith Missions projects, South Africa charity projects, street children initiatives, township development, orphan support programs" />
+        <meta property="og:title" content="Faith Missions Projects - Transforming Lives" />
+        <meta property="og:description" content="Projects supporting street children across South Africa and DRC" />
+        <link rel="canonical" href="https://faithmissionsstonefoundation.org/project" />
+      </Head>
       <Navbar hclass={'wpo-site-header'} Logo={Logo} />
       <PageTitle pageTitle={'Portfolio'} />
       <section className='project-page section-padding'>

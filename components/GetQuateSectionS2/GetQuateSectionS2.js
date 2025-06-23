@@ -16,10 +16,10 @@ const GetQuateSectionS2 = props => {
               <div className='section-title'>
                 <span>
                   <Image src={Shape} alt='' />
-                  Joel Orphanage Of Ministry
+                  Faith Missions Stone Foundation
                 </span>
                 <h2>
-                  Helping each other make <span>world</span> better
+                  Helping each other make <span>South Africa</span> better
                 </h2>
                 <p>
                   Helping each other creates a stronger, kinder world. We build
@@ -35,15 +35,16 @@ const GetQuateSectionS2 = props => {
                 </div>
                 <ul>
                   <li>
-                    <i className='flaticon-check'></i>service electrical layout,
-                    design
+                    <i className='flaticon-check'></i>Township street child rescue
+                    programs
                   </li>
                   <li>
-                    <i className='flaticon-check'></i>Compliance and Enforcement
+                    <i className='flaticon-check'></i>Mobile health clinics across
+                    SA provinces
                   </li>
                   <li>
-                    <i className='flaticon-check'></i>Becoming a registered
-                    provider
+                    <i className='flaticon-check'></i>Educational reintegration
+                    support
                   </li>
                 </ul>
               </div>

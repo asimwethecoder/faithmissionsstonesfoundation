@@ -14,9 +14,9 @@ const FeaturesSection = () => {
                 <div className='content'>
                   <h2>
                     <Image src={img1} alt='Healthcare' />
-                    Healthy Foods
+                    Nutritious Meals
                   </h2>
-                  <h3>Love & Pets Fund donation</h3>
+                  <h3>Township Feeding Programs</h3>
                 </div>
                 <div className='icon'>
                   <i className='flaticon-pawprint'></i>
@@ -30,9 +30,9 @@ const FeaturesSection = () => {
                 <div className='content'>
                   <h2>
                     <Image src={img1} alt='Healthcare' />
-                    Medical Facilities
+                    Mobile Health Clinics
                   </h2>
-                  <h3>Pet Grooming & Natural healthy food</h3>
+                  <h3>TB/HIV Testing & Treatment for Street Youth</h3>
                 </div>
                 <div className='icon'>
                   <i className='flaticon-dog'></i>
@@ -47,7 +47,7 @@ const FeaturesSection = () => {
                   <h2>
                     <Image src={img1} alt='Healthcare' /> Make Donation
                   </h2>
-                  <h3>Veterinary Help & pet Health care</h3>
+                  <h3>Support Street Children & Mining Rescue</h3>
                 </div>
                 <div className='icon'>
                   <i className='flaticon-cat-bath'></i>

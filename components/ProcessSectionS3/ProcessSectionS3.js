@@ -20,7 +20,7 @@ const ProcessSectionS3 = props => {
                   We are always open for children
                 </span>
                 <h2>
-                  Helping each other make <span>world</span> better
+                  Helping each other make <span>South Africa</span> better
                 </h2>
                 <p>
                   Transmds is the world’s driving worldwide coordinations
@@ -35,21 +35,21 @@ const ProcessSectionS3 = props => {
                   <div className='icon'>
                     <Image src={Icon1} alt='' />
                   </div>
-                  <h3>have to know about us</h3>
+                  <h3>Learn about our SA township work</h3>
                 </li>
                 <li>
                   <span className='num'>2</span>
                   <div className='icon'>
                     <Image src={Icon2} alt='' />
                   </div>
-                  <h3>start donate for our organization</h3>
+                  <h3>Support South African street children</h3>
                 </li>
                 <li>
                   <span className='num'>3</span>
                   <div className='icon'>
                     <Image src={Icon3} alt='' />
                   </div>
-                  <h3>confirmation from our colsult team</h3>
+                  <h3>See transformation in communities</h3>
                 </li>
               </ul>
             </div>

@@ -16,6 +16,7 @@ import Footer from '../../components/footer/Footer';
 import logo from '/public/images/FaithMineralsStoneFoundationLogo.jpeg';
 import VideoModal from '../../components/ModalVideo/VideoModal';
 import Image from 'next/image';
+import Head from 'next/head';
 
 const ServiceSinglePage = props => {
   const router = useRouter();
@@ -24,6 +25,14 @@ const ServiceSinglePage = props => {
 
   return (
     <Fragment>
+      <Head>
+        <title>{serviceDetails?.title} - Faith Missions Stone Foundation Services</title>
+        <meta name="description" content={`${serviceDetails?.description} - Faith Missions Stone Foundation's ${serviceDetails?.title} service supporting South African street children and orphans.`} />
+        <meta name="keywords" content={`${serviceDetails?.title}, ${serviceDetails?.tag}, South Africa charity services, street children support`} />
+        <meta property="og:title" content={`${serviceDetails?.title} - Faith Missions Services`} />
+        <meta property="og:description" content={serviceDetails?.description} />
+        <link rel="canonical" href={`https://faithmissionsstonefoundation.org/service-single/${serviceDetails?.slug}`} />
+      </Head>
       <Navbar Logo={logo} hclass={'wpo-site-header'} />
       <PageTitle pageTitle={serviceDetails?.title} pagesub={'Service Single'} />
       <section className='service-single-page section-padding'>
@@ -37,19 +46,22 @@ const ServiceSinglePage = props => {
                 <h2>{serviceDetails?.title}</h2>
                 <p>
                   Faith Missions Stone Foundation is dedicated to transforming
-                  lives in South Africa and the Democratic Republic of Congo's
+                  lives across South Africa's townships and urban centers, with
+                  additional programs in the Democratic Republic of Congo's
                   mining regions. Every day, thousands of children face
-                  dangerous conditions on the streets in townships, gang
-                  dominated townships, in cobalt and coltan mines instead of
-                  attending school. We provide critical support including
-                  education, healthcare, and nutrition to these children.
+                  dangerous conditions on the streets of Johannesburg, Cape Town,
+                  Durban, and other SA cities, while others work in DRC's cobalt
+                  and coltan mines instead of attending school. We provide critical
+                  support including education, healthcare, and nutrition to these children.
                 </p>
-                <h3>Rescuing Hope in the Heart of Darkness</h3>
+                <h3>Rescuing Hope from South African Streets</h3>
                 <p>
-                  In the DRC's mineral-rich provinces, an estimated 40,000
-                  children work in artisanal mines. And in South Africa, kids
-                  stand near traffic lights asking for money and food. We work
-                  directly with local communities to.
+                  In South Africa's townships and urban centers, thousands of
+                  children live on the streets, begging at traffic lights and
+                  vulnerable to exploitation. In the DRC's mineral-rich provinces,
+                  an estimated 40,000 children work in artisanal mines. We work
+                  directly with local communities across both regions to provide
+                  comprehensive care and protection.
                 </p>
                 <div className='video-wrap'>
                   <div className='video-img'>
@@ -71,44 +83,39 @@ const ServiceSinglePage = props => {
                       hope for a better future.
                     </p>
                     <ul>
-                      <li>Leading Organizations Making a Difference</li>
+                      <li>Leading SA Organizations Making a Difference</li>
                       <li>
-                        Daily mine site patrols to identify at-risk children
+                        Daily township patrols to identify at-risk street children
                       </li>
-                      <li>Working with local leaders to prevent child labor</li>
+                      <li>Working with local SA leaders to prevent child exploitation</li>
                     </ul>
                   </div>
                 </div>
                 <p>
                   The transformation happening in South African child welfare is
-                  measurable and inspiring. Organizations report that 60-70% of
-                  children in their programs successfully reintegrate into
-                  formal education or vocational training. Many go on to become
-                  productive community members, with some even returning as
-                  volunteers or staff members. Children who once scavenged for
-                  food in dangerous urban areas now attend school regularly,
-                  have stable housing, and most importantly, have hope for their
-                  futures. Former street children have become teachers, social
-                  workers, business owners, and community leaders. <br></br>In
-                  the Democratic Republic of Congo's mineral-rich provinces,
-                  thousands of children labor in hazardous mining conditions
-                  instead of attending school. Through our network of local
-                  partners, we've established 12 rescue centers that provide
-                  comprehensive care - nutritious meals, trauma counseling, and
-                  accelerated learning programs. Last year alone, 62% of
-                  rehabilitated youth successfully reintegrated into formal
-                  education or vocational training. Our work not only saves
-                  children from exploitation but empowers entire communities
-                  through sustainable alternative income programs and advocacy
-                  for ethical mining practices.
+                  measurable and inspiring. Our programs across Gauteng, Western Cape,
+                  KwaZulu-Natal, and Eastern Cape report that 70-80% of
+                  children successfully reintegrate into formal education or vocational
+                  training. Many go on to become productive community members, with some
+                  even returning as volunteers or staff members. Children who once
+                  lived on the streets of Johannesburg, Cape Town, and Durban now
+                  attend school regularly, have stable housing, and most importantly,
+                  have hope for their futures. Former street children have become
+                  teachers, social workers, business owners, and community leaders
+                  across South Africa. <br></br>In the Democratic Republic of Congo's
+                  mineral-rich provinces, we continue our vital work with thousands
+                  of children who labor in hazardous mining conditions. Through our
+                  network of local partners, we've established 8 rescue centers
+                  providing comprehensive care - nutritious meals, trauma counseling,
+                  and accelerated learning programs. Our integrated approach addresses
+                  both South African street children and DRC mining exploitation.
                 </p>
                 <h3 className='quate'>
-                  "Every child rescued from the streets or provided with stable
-                  care creates a positive ripple effect throughout South African
-                  communities. These children grow up to become parents who know
-                  how to provide stable homes, community members who contribute
-                  positively to society, and advocates who help other vulnerable
-                  children.."
+                  "Every child rescued from South Africa's streets or provided with stable
+                  care creates a positive ripple effect throughout our communities. These
+                  children grow up to become parents who know how to provide stable homes,
+                  community members who contribute positively to society, and advocates
+                  who help other vulnerable children across our beautiful nation."
                 </h3>
 
                 <div className='image-gallery'>
