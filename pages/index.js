@@ -14,10 +14,33 @@ import CtaSectionS3 from '../components/CtaSectionS3/CtaSectionS3';
 import FooterS2 from '../components/footerS2/FooterS2';
 import Scrollbar from '../components/scrollbar/scrollbar';
 import Logo from '../public/images/FaithMineralsStoneFoundationLogo.jpeg';
+import Head from 'next/head';
 
 const HomePage2 = () => {
   return (
     <Fragment>
+      <Head>
+        <title>Faith Missions Stone Foundation | South African Charity for Street Children & Orphans</title>
+        <meta name="description" content="Faith Missions Stone Foundation supports street children and orphans across South Africa's townships and DRC mining regions. 25+ years transforming lives through education, healthcare, and shelter." />
+        <meta name="keywords" content="South Africa charity, street children, orphans, township development, child welfare, DRC mining, nonprofit organization, Johannesburg, Cape Town, Durban" />
+        <meta property="og:title" content="Faith Missions Stone Foundation - Transforming Lives in South Africa" />
+        <meta property="og:description" content="Supporting street children and orphans across South Africa's townships and DRC mining regions" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://faithmissionsstonefoundation.org" />
+        <link rel="canonical" href="https://faithmissionsstonefoundation.org" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "NGO",
+            "name": "Faith Missions Stone Foundation",
+            "description": "Supporting street children and orphans across South Africa and DRC",
+            "url": "https://faithmissionsstonefoundation.org",
+            "areaServed": ["South Africa", "Democratic Republic of Congo"],
+            "foundingDate": "1999",
+            "mission": "Transforming lives of street children and orphans through education, healthcare, and shelter"
+          })}
+        </script>
+      </Head>
       <NavbarS2 hclass={'wpo-site-header'} Logo={Logo} />
       <Hero2 />
       <RegisterSection />

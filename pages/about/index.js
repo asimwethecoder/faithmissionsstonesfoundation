@@ -29,7 +29,13 @@ const AboutPage = () => {
   return (
     <Fragment>
       <Head>
-        <title>About Us - Faith Missions Stone Foundation</title>
+        <title>About Us - Faith Missions Stone Foundation | South African Charity</title>
+        <meta name="description" content="Learn about Faith Missions Stone Foundation's mission to support street children and orphans across South Africa's townships and DRC mining regions. 25+ years of experience." />
+        <meta name="keywords" content="about faith missions, South Africa charity history, street children support, orphan care, township development, nonprofit mission" />
+        <meta property="og:title" content="About Faith Missions Stone Foundation" />
+        <meta property="og:description" content="25+ years supporting street children across South Africa and DRC" />
+        <meta property="og:url" content="https://faithmissionsstonefoundation.org/about" />
+        <link rel="canonical" href="https://faithmissionsstonefoundation.org/about" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       </Head>
       <Navbar hclass={'wpo-site-header'} Logo={Logo} />

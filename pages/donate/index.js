@@ -10,6 +10,7 @@ import peyimg2 from '../../public/images/checkout/img-2.png';
 import peyimg3 from '../../public/images/checkout/img-3.png';
 import peyimg4 from '../../public/images/checkout/img-4.png';
 import Image from 'next/image';
+import Head from 'next/head';
 
 const DonatePage = () => {
   const [formData, setFormData] = useState({
@@ -71,6 +72,25 @@ const DonatePage = () => {
 
   return (
     <Fragment>
+      <Head>
+        <title>Donate Now - Faith Missions Stone Foundation | Support Street Children</title>
+        <meta name="description" content="Donate to Faith Missions Stone Foundation and directly support South African street children and orphans. Secure online donations help fund township programs and DRC mining rescue operations." />
+        <meta name="keywords" content="donate Faith Missions, support street children, South Africa charity donation, orphan support, township programs, secure donation" />
+        <meta property="og:title" content="Donate to Support South African Street Children" />
+        <meta property="og:description" content="Your donation transforms lives of street children and orphans across South Africa" />
+        <link rel="canonical" href="https://faithmissionsstonefoundation.org/donate" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "DonateAction",
+            "recipient": {
+              "@type": "NGO",
+              "name": "Faith Missions Stone Foundation"
+            },
+            "description": "Support street children and orphans in South Africa"
+          })}
+        </script>
+      </Head>
       <Navbar hclass={'wpo-site-header'} Logo={Logo} />
       <PageTitle pageTitle={'Donate Now'} />
       <div className='donation-page-area section-padding'>

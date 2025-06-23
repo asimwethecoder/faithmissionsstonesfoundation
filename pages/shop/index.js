@@ -9,6 +9,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/footer/Footer';
 
 import Logo from '/public/images/FaithMineralsStoneFoundationLogo.jpeg';
+import Head from 'next/head';
 
 const ShopPage = ({ addToCart }) => {
   const productsArray = api();
@@ -21,6 +22,14 @@ const ShopPage = ({ addToCart }) => {
 
   return (
     <Fragment>
+      <Head>
+        <title>Shop - Faith Missions Stone Foundation | Support Our Cause</title>
+        <meta name="description" content="Shop Faith Missions Stone Foundation merchandise and support South African street children and orphans. Every purchase helps fund our township programs." />
+        <meta name="keywords" content="Faith Missions shop, charity merchandise, support street children, South Africa charity shop, nonprofit store" />
+        <meta property="og:title" content="Faith Missions Shop - Support Street Children" />
+        <meta property="og:description" content="Shop to support South African street children and orphans" />
+        <link rel="canonical" href="https://faithmissionsstonefoundation.org/shop" />
+      </Head>
       <Navbar hclass={'wpo-site-header'} Logo={Logo} />
       <PageTitle pageTitle={'Shop'} />
       <section className='shop-page section-padding'>
