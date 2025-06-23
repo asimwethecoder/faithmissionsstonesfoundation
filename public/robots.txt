@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /service
+Allow: /project
+Allow: /contact
+
+Disallow: /admin/
+Disallow: /api/
+Disallow: /checkout/
+Disallow: /cart/
+Disallow: /order-received/
+Disallow: /shop/
+Disallow: /donate/
+
+Sitemap: https://faithmissionsstonefoundation.org/sitemap.xml
