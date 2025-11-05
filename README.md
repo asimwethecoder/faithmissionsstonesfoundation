@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).# faithmissionsstonesfoundation
+This is a web app built using React, NextJS, Nodejs, Vercel.# faithmissionsstonesfoundation
